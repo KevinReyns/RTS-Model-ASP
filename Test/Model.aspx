@@ -461,6 +461,50 @@
        double Gewogentotaal = Gewogendata + Gewogenvis + Gewogenprijs + Gewogenself + Gewogenpred + Gewogenmob + Gewogencol + Gewogensec;
        GewogenTotaalLabel.Text = " " + Gewogentotaal;
 
+
+       <%-- Toolscores --%>
+       double Datasas = 5;
+       double Datapent = 7;
+       double Datatab = 3;
+
+       double Vissas = 5;
+       double Vispent = 3;
+       double Vistab = 7;
+
+       double Prijssas = 3;
+       double Prijspent = 7;
+       double Prijstab = 5;
+
+       double Selfsas = 5;
+       double Selfpent = 3;
+       double Selftab = 7;
+
+       double Predsas = 7;
+       double Predpent = 1;
+       double Predtab = 3;
+
+       double Mobsas = 5;
+       double Mobpent = 3;
+       double Mobtab = 7;
+
+       double Colsas = 3;
+       double Colpent = 3;
+       double Coltab = 7;
+
+       double Secsas = 5;
+       double Secpent = 7;
+       double Sectab = 3;
+
+       <%-- Matrix datatool --%>
+       double DataST = Datasas/Datatab;
+       double DataTS = Datatab/Datasas;
+       double DataTP = Datatab/Datapent;
+       double DataPT = Datapent/Datatab;
+       double DataPS = Datapent/Datasas;
+       double DataSP = Datasas/Datapent;
+
+       <%-- Matrix visualisatietool --%>
+
       }
       
    </script>
