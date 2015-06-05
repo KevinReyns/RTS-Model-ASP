@@ -436,27 +436,51 @@
        <%-- Berekeningen Gewogen score matrix --%>
        double Gewogendata = Somdata/Somtotaal;
        GewogenDataLabel.Text = " " + Gewogendata;
+       GewogenDataLabel1.Text = GewogenDataLabel.Text;
+       GewogenDataLabel2.Text = GewogenDataLabel.Text;
+       GewogenDataLabel3.Text = GewogenDataLabel.Text;
 
        double Gewogenvis = Somvis/Somtotaal;
        GewogenVisLabel.Text = " " + Gewogenvis;
+       GewogenVisLabel1.Text = GewogenVisLabel.Text;
+       GewogenVisLabel2.Text = GewogenVisLabel.Text;
+       GewogenVisLabel3.Text = GewogenVisLabel.Text;
 
        double Gewogenprijs = Somprijs/Somtotaal;
        GewogenPrijsLabel.Text = " " + Gewogenprijs;
+       GewogenPrijsLabel1.Text = GewogenPrijsLabel.Text;
+       GewogenPrijsLabel2.Text = GewogenPrijsLabel.Text;
+       GewogenPrijsLabel3.Text = GewogenPrijsLabel.Text;
 
        double Gewogenself = Somself/Somtotaal;
        GewogenSelfLabel.Text = " " + Gewogenself;
+       GewogenSelfLabel1.Text = GewogenSelfLabel.Text;
+       GewogenSelfLabel2.Text = GewogenSelfLabel.Text;
+       GewogenSelfLabel3.Text = GewogenSelfLabel.Text;
 
        double Gewogenpred = Sompred/Somtotaal;
        GewogenPredLabel.Text = " " + Gewogenpred;
+       GewogenPredLabel1.Text = GewogenPredLabel.Text;
+       GewogenPredLabel2.Text = GewogenPredLabel.Text;
+       GewogenPredLabel3.Text = GewogenPredLabel.Text;
 
        double Gewogenmob = Sommob/Somtotaal;
        GewogenMobLabel.Text = " " + Gewogenmob;
+       GewogenMobLabel1.Text = GewogenMobLabel.Text;
+       GewogenMobLabel2.Text = GewogenMobLabel.Text;
+       GewogenMobLabel3.Text = GewogenMobLabel.Text;
 
        double Gewogencol = Somcol/Somtotaal;
        GewogenColLabel.Text = " " + Gewogencol;
+       GewogenColLabel1.Text = GewogenColLabel.Text;
+       GewogenColLabel2.Text = GewogenColLabel.Text;
+       GewogenColLabel3.Text = GewogenColLabel.Text;
 
        double Gewogensec = Somsec/Somtotaal;
        GewogenSecLabel.Text = " " + Gewogensec;
+       GewogenSecLabel1.Text = GewogenSecLabel.Text;
+       GewogenSecLabel2.Text = GewogenSecLabel.Text;
+       GewogenSecLabel3.Text = GewogenSecLabel.Text;
 
        double Gewogentotaal = Gewogendata + Gewogenvis + Gewogenprijs + Gewogenself + Gewogenpred + Gewogenmob + Gewogencol + Gewogensec;
        GewogenTotaalLabel.Text = " " + Gewogentotaal;
@@ -526,6 +550,18 @@
        DataTGewLabel.Text = " " + DataTGew;
        DataGewLabel.Text = " " + DataGew;
 
+       DataSGewLabel1.Text = DataSGewLabel.Text;
+       DataTGewLabel1.Text = DataTGewLabel.Text;
+       DataPGewLabel1.Text = DataPGewLabel.Text;
+
+       double TotaalGewSData = Gewogendata*DataSGew;
+       double TotaalGewTData = Gewogendata*DataTGew;
+       double TotaalGewPData = Gewogendata*DataPGew;
+
+       TotaalGewSDataLabel.Text = " " + TotaalGewSData;
+       TotaalGewTDataLabel.Text = " " + TotaalGewTData;
+       TotaalGewPDataLabel.Text = " " + TotaalGewPData;
+
        <%-- Matrix visualisatietool --%>
        double VisST = Vissas/Vistab;
        double VisTS = Vistab/Vissas;
@@ -557,6 +593,18 @@
        VisTGewLabel.Text = " " + VisTGew;
        VisGewLabel.Text = " " + VisGew;
 
+       VisSGewLabel1.Text = VisSGewLabel.Text;
+       VisTGewLabel1.Text = VisTGewLabel.Text;
+       VisPGewLabel1.Text = VisPGewLabel.Text;
+
+       double TotaalGewSVis = Gewogenvis*VisSGew;
+       double TotaalGewTVis = Gewogenvis*VisTGew;
+       double TotaalGewPVis = Gewogenvis*VisPGew;
+
+       TotaalGewSVisLabel.Text = " " + TotaalGewSVis;
+       TotaalGewTVisLabel.Text = " " + TotaalGewTVis;
+       TotaalGewPVisLabel.Text = " " + TotaalGewPVis;
+
        <%-- Matrix Prijstool --%>
        double PrijsST = Prijssas/Prijstab;
        double PrijsTS = Prijstab/Prijssas;
@@ -587,6 +635,18 @@
        PrijsPGewLabel.Text = " " + PrijsPGew;
        PrijsTGewLabel.Text = " " + PrijsTGew;
        PrijsGewLabel.Text = " " + PrijsGew;
+
+       PrijsSGewLabel1.Text = PrijsSGewLabel.Text;
+       PrijsTGewLabel1.Text = PrijsTGewLabel.Text;
+       PrijsPGewLabel1.Text = PrijsPGewLabel.Text;
+
+       double TotaalGewSPrijs = Gewogenprijs*PrijsSGew;
+       double TotaalGewTPrijs = Gewogenprijs*PrijsTGew;
+       double TotaalGewPPrijs = Gewogenprijs*PrijsPGew;
+
+       TotaalGewSPrijsLabel.Text = " " + TotaalGewSPrijs;
+       TotaalGewTPrijsLabel.Text = " " + TotaalGewTPrijs;
+       TotaalGewPPrijsLabel.Text = " " + TotaalGewPPrijs;
        
        <%-- Matrix Self-Servicetool --%>
        double SelfST = Selfsas/Selftab;
@@ -619,7 +679,17 @@
        SelfTGewLabel.Text = " " + SelfTGew;
        SelfGewLabel.Text = " " + SelfGew;
 
-       
+       SelfSGewLabel1.Text = SelfSGewLabel.Text;
+       SelfTGewLabel1.Text = SelfTGewLabel.Text;
+       SelfPGewLabel1.Text = SelfPGewLabel.Text;
+
+       double TotaalGewSSelf = Gewogenself*SelfSGew;
+       double TotaalGewTSelf = Gewogenself*SelfTGew;
+       double TotaalGewPSelf = Gewogenself*SelfPGew;
+
+       TotaalGewSSelfLabel.Text = " " + TotaalGewSSelf;
+       TotaalGewTSelfLabel.Text = " " + TotaalGewTSelf;
+       TotaalGewPSelfLabel.Text = " " + TotaalGewPSelf;
 
        <%-- Matrix Predictivetool --%>
        double PredST = Predsas/Predtab;
@@ -652,6 +722,18 @@
        PredTGewLabel.Text = " " + PredTGew;
        PredGewLabel.Text = " " + PredGew;
 
+       PredSGewLabel1.Text = PredSGewLabel.Text;
+       PredTGewLabel1.Text = PredTGewLabel.Text;
+       PredPGewLabel1.Text = PredPGewLabel.Text;
+
+       double TotaalGewSPred = Gewogenpred*PredSGew;
+       double TotaalGewTPred = Gewogenpred*PredTGew;
+       double TotaalGewPPred = Gewogenpred*PredPGew;
+
+       TotaalGewSPredLabel.Text = " " + TotaalGewSPred;
+       TotaalGewTPredLabel.Text = " " + TotaalGewTPred;
+       TotaalGewPPredLabel.Text = " " + TotaalGewPPred;
+
        <%-- Matrix Mobieltool --%>
        double MobST = Mobsas/Mobtab;
        double MobTS = Mobtab/Mobsas;
@@ -682,6 +764,18 @@
        MobPGewLabel.Text = " " + MobPGew;
        MobTGewLabel.Text = " " + MobTGew;
        MobGewLabel.Text = " " + MobGew;
+
+       MobSGewLabel1.Text = MobSGewLabel.Text;
+       MobTGewLabel1.Text = MobTGewLabel.Text;
+       MobPGewLabel1.Text = MobPGewLabel.Text;
+
+       double TotaalGewSMob = Gewogenmob*MobSGew;
+       double TotaalGewTMob = Gewogenmob*MobTGew;
+       double TotaalGewPMob = Gewogenmob*MobPGew;
+
+       TotaalGewSMobLabel.Text = " " + TotaalGewSMob;
+       TotaalGewTMobLabel.Text = " " + TotaalGewTMob;
+       TotaalGewPMobLabel.Text = " " + TotaalGewPMob;
 
        <%-- Matrix Collaborationtool --%>
        double ColST = Colsas/Coltab;
@@ -714,6 +808,18 @@
        ColTGewLabel.Text = " " + ColTGew;
        ColGewLabel.Text = " " + ColGew;
 
+       ColSGewLabel1.Text = ColSGewLabel.Text;
+       ColTGewLabel1.Text = ColTGewLabel.Text;
+       ColPGewLabel1.Text = ColPGewLabel.Text;
+
+       double TotaalGewSCol = Gewogencol*ColSGew;
+       double TotaalGewTCol = Gewogencol*ColTGew;
+       double TotaalGewPCol = Gewogencol*ColPGew;
+
+       TotaalGewSColLabel.Text = " " + TotaalGewSCol;
+       TotaalGewTColLabel.Text = " " + TotaalGewTCol;
+       TotaalGewPColLabel.Text = " " + TotaalGewPCol;
+       
        <%-- Matrix Securitytool --%>
        double SecST = Secsas/Sectab;
        double SecTS = Sectab/Secsas;
@@ -745,6 +851,30 @@
        SecTGewLabel.Text = " " + SecTGew;
        SecGewLabel.Text = " " + SecGew;
 
+       SecSGewLabel1.Text = SecSGewLabel.Text;
+       SecTGewLabel1.Text = SecTGewLabel.Text;
+       SecPGewLabel1.Text = SecPGewLabel.Text;
+
+       double TotaalGewSSec = Gewogensec*SecSGew;
+       double TotaalGewTSec = Gewogensec*SecTGew;
+       double TotaalGewPSec = Gewogensec*SecPGew;
+
+       TotaalGewSSecLabel.Text = " " + TotaalGewSSec;
+       TotaalGewTSecLabel.Text = " " + TotaalGewTSec;
+       TotaalGewPSecLabel.Text = " " + TotaalGewPSec;
+
+       <%-- Totalen --%>
+       double TotaalS = TotaalGewSData + TotaalGewSVis + TotaalGewSPrijs + TotaalGewSSelf + TotaalGewSPred +TotaalGewSMob + TotaalGewSCol + TotaalGewSSec;
+       double TotaalT = TotaalGewTData + TotaalGewTVis + TotaalGewTPrijs + TotaalGewTSelf + TotaalGewTPred +TotaalGewTMob + TotaalGewTCol + TotaalGewTSec;
+       double TotaalP = TotaalGewPData + TotaalGewPVis + TotaalGewPPrijs + TotaalGewPSelf + TotaalGewPPred +TotaalGewPMob + TotaalGewPCol + TotaalGewPSec;
+
+       TotaalSLabel.Text = " " + TotaalS;
+       TotaalTLabel.Text = " " + TotaalT;
+       TotaalPLabel.Text = " " + TotaalP;
+
+       TotaalSLabel1.Text = TotaalSLabel.Text;
+       TotaalTLabel1.Text = TotaalTLabel.Text;
+       TotaalPLabel1.Text = TotaalPLabel.Text;
       }
       
    </script>
@@ -752,7 +882,7 @@
 
       <h2>RTS Model</h2>
 
-      <table border="2" cellpadding="5" class="table table-bordered table-hover">
+      <table border="2" cellpadding="5" class="table table-bordered table-hover  table-responsive table-striped">
           <tr>
               <td>Data</td>
               <td>
@@ -1375,5 +1505,152 @@
         <td><asp:Label id="SecSomLabel" runat="server"/></td>
     </tr>
     </table> 
+
+    <table class="table table-bordered table-hover table-responsive">
+        <tr>
+            <th>Criteria</th>
+            <th colspan="3">SAS VA</th>
+            <th colspan="3">Tableau</th>
+            <th colspan="3">Pentaho</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Gew. score alternatief</td>
+            <td>Gew. Score Criteria</td>
+            <td>Totaal Gewogen</td>
+            <td>Gew. score alternatief</td>
+            <td>Gew. Score Criteria</td>
+            <td>Totaal Gewogen</td>
+            <td>Gew. score alternatief</td>
+            <td>Gew. Score Criteria</td>
+            <td>Totaal Gewogen</td>
+        </tr>
+        <tr>
+            <td>Data</td>
+            <td><asp:Label id="DataSGewLabel1"  runat="server"/></td>
+            <td><asp:Label id="GewogenDataLabel1"  runat="server"/></td>
+            <td><asp:Label id="TotaalGewSDataLabel"  runat="server"/></td>
+            <td><asp:Label id="DataTGewLabel1"  runat="server"/></td>
+            <td><asp:Label id="GewogenDataLabel2"  runat="server"/></td>
+            <td><asp:Label id="TotaalGewTDataLabel"  runat="server"/></td>
+            <td><asp:Label id="DataPGewLabel1"  runat="server"/></td>
+            <td><asp:Label id="GewogenDataLabel3"  runat="server"/></td>
+            <td><asp:Label id="TotaalGewPDataLabel"  runat="server"/></td>
+        </tr>
+        <tr>
+            <td>Visualisatie</td>
+            <td><asp:Label id="VisSGewLabel1"  runat="server"/></td>
+            <td><asp:Label id="GewogenVisLabel1"  runat="server"/></td>
+            <td><asp:Label id="TotaalGewSVisLabel"  runat="server"/></td>
+            <td><asp:Label id="VisTGewLabel1"  runat="server"/></td>
+            <td><asp:Label id="GewogenVisLabel2"  runat="server"/></td>
+            <td><asp:Label id="TotaalGewTVisLabel"  runat="server"/></td>
+            <td><asp:Label id="VisPGewLabel1"  runat="server"/></td>
+            <td><asp:Label id="GewogenVisLabel3"  runat="server"/></td>
+            <td><asp:Label id="TotaalGewPVisLabel"  runat="server"/></td>
+        </tr>
+        <tr>
+            <td>Prijs</td>
+            <td><asp:Label id="PrijsSGewLabel1"  runat="server"/></td>
+            <td><asp:Label id="GewogenPrijsLabel1"  runat="server"/></td>
+            <td><asp:Label id="TotaalGewSPrijsLabel"  runat="server"/></td>
+            <td><asp:Label id="PrijsTGewLabel1"  runat="server"/></td>
+            <td><asp:Label id="GewogenPrijsLabel2"  runat="server"/></td>
+            <td><asp:Label id="TotaalGewTPrijsLabel"  runat="server"/></td>
+            <td><asp:Label id="PrijsPGewLabel1"  runat="server"/></td>
+            <td><asp:Label id="GewogenPrijsLabel3"  runat="server"/></td>
+            <td><asp:Label id="TotaalGewPPrijsLabel"  runat="server"/></td>
+        </tr>
+        <tr>
+            <td>Self-Service</td>
+            <td><asp:Label id="SelfSGewLabel1"  runat="server"/></td>
+            <td><asp:Label id="GewogenSelfLabel1"  runat="server"/></td>
+            <td><asp:Label id="TotaalGewSSelfLabel"  runat="server"/></td>
+            <td><asp:Label id="SelfTGewLabel1"  runat="server"/></td>
+            <td><asp:Label id="GewogenSelfLabel2"  runat="server"/></td>
+            <td><asp:Label id="TotaalGewTSelfLabel"  runat="server"/></td>
+            <td><asp:Label id="SelfPGewLabel1"  runat="server"/></td>
+            <td><asp:Label id="GewogenSelfLabel3"  runat="server"/></td>
+            <td><asp:Label id="TotaalGewPSelfLabel"  runat="server"/></td>
+        </tr>
+        <tr>
+            <td>Predictive Analytics</td>
+            <td><asp:Label id="PredSGewLabel1"  runat="server"/></td>
+            <td><asp:Label id="GewogenPredLabel1"  runat="server"/></td>
+            <td><asp:Label id="TotaalGewSPredLabel"  runat="server"/></td>
+            <td><asp:Label id="PredTGewLabel1"  runat="server"/></td>
+            <td><asp:Label id="GewogenPredLabel2"  runat="server"/></td>
+            <td><asp:Label id="TotaalGewTPredLabel"  runat="server"/></td>
+            <td><asp:Label id="PredPGewLabel1"  runat="server"/></td>
+            <td><asp:Label id="GewogenPredLabel3"  runat="server"/></td>
+            <td><asp:Label id="TotaalGewPPredLabel"  runat="server"/></td>
+        </tr>
+        <tr>
+            <td>Mobiel</td>
+            <td><asp:Label id="MobSGewLabel1"  runat="server"/></td>
+            <td><asp:Label id="GewogenMobLabel1"  runat="server"/></td>
+            <td><asp:Label id="TotaalGewSMobLabel"  runat="server"/></td>
+            <td><asp:Label id="MobTGewLabel1"  runat="server"/></td>
+            <td><asp:Label id="GewogenMobLabel2"  runat="server"/></td>
+            <td><asp:Label id="TotaalGewTMobLabel"  runat="server"/></td>
+            <td><asp:Label id="MobPGewLabel1"  runat="server"/></td>
+            <td><asp:Label id="GewogenMobLabel3"  runat="server"/></td>
+            <td><asp:Label id="TotaalGewPMobLabel"  runat="server"/></td>
+        </tr>
+        <tr>
+            <td>Collaboration</td>
+            <td><asp:Label id="ColSGewLabel1"  runat="server"/></td>
+            <td><asp:Label id="GewogenColLabel1"  runat="server"/></td>
+            <td><asp:Label id="TotaalGewSColLabel"  runat="server"/></td>
+            <td><asp:Label id="ColTGewLabel1"  runat="server"/></td>
+            <td><asp:Label id="GewogenColLabel2"  runat="server"/></td>
+            <td><asp:Label id="TotaalGewTColLabel"  runat="server"/></td>
+            <td><asp:Label id="ColPGewLabel1"  runat="server"/></td>
+            <td><asp:Label id="GewogenColLabel3"  runat="server"/></td>
+            <td><asp:Label id="TotaalGewPColLabel"  runat="server"/></td>
+        </tr>
+        <tr>
+            <td>Security</td>
+            <td><asp:Label id="SecSGewLabel1"  runat="server"/></td>
+            <td><asp:Label id="GewogenSecLabel1"  runat="server"/></td>
+            <td><asp:Label id="TotaalGewSSecLabel"  runat="server"/></td>
+            <td><asp:Label id="SecTGewLabel1"  runat="server"/></td>
+            <td><asp:Label id="GewogenSecLabel2"  runat="server"/></td>
+            <td><asp:Label id="TotaalGewTSecLabel"  runat="server"/></td>
+            <td><asp:Label id="SecPGewLabel1"  runat="server"/></td>
+            <td><asp:Label id="GewogenSecLabel3"  runat="server"/></td>
+            <td><asp:Label id="TotaalGewPSecLabel"  runat="server"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><asp:Label id="TotaalSLabel"  runat="server"/></td>
+            <td></td>
+            <td></td>
+            <td><asp:Label id="TotaalTLabel"  runat="server"/></td>
+            <td></td>
+            <td></td>
+            <td><asp:Label id="TotaalPLabel"  runat="server"/></td>
+        </tr>
+    </table>
+
+    <table class="table table-bordered table-hover table-responsive">
+        <tr>
+            <th></th>
+            <th>SAS VA</th>
+            <th>Tableau</th>
+            <th>Pentaho</th>
+        </tr>
+        <tr>
+            <th>Resultaat</th>
+            <td>TotaalSLabel1</td>
+            <td>TotaalTLabel1</td>
+            <td>TotaalPLabel1</td>
+        </tr>
+    </table>
+
+
+
 
 </asp:Content>
