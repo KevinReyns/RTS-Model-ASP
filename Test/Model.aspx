@@ -502,8 +502,248 @@
        double DataPT = Datapent/Datatab;
        double DataPS = Datapent/Datasas;
        double DataSP = Datasas/Datapent;
+       double DataSSom = DataST + DataSP + 1;
+       double DataPSom = DataPT + DataPS + 1;
+       double DataTSom = DataTS + DataTP + 1;
+       double DataSom = DataSSom + DataPSom + DataTSom;
+       double DataSGew = DataSSom/DataSom;
+       double DataPGew = DataPSom/DataSom;
+       double DataTGew = DataTSom/DataSom;
+       double DataGew = DataSGew + DataTGew + DataPGew;
+
+       DataSTLabel.Text = " " + DataST;
+       DataTSLabel.Text = " " + DataTS;
+       DataTPLabel.Text = " " + DataTP;
+       DataPTLabel.Text = " " + DataPT;
+       DataPSLabel.Text = " " + DataPS;
+       DataSPLabel.Text = " " + DataSP;
+       DataSSomLabel.Text = " " + DataSSom;
+       DataPSomLabel.Text = " " + DataPSom;
+       DataTSomLabel.Text = " " + DataTSom;
+       DataSomLabel.Text = " " + DataSom;
+       DataSGewLabel.Text = " " + DataSGew;
+       DataPGewLabel.Text = " " + DataPGew;
+       DataTGewLabel.Text = " " + DataTGew;
+       DataGewLabel.Text = " " + DataGew;
 
        <%-- Matrix visualisatietool --%>
+       double VisST = Vissas/Vistab;
+       double VisTS = Vistab/Vissas;
+       double VisTP = Vistab/Vispent;
+       double VisPT = Vispent/Vistab;
+       double VisPS = Vispent/Vissas;
+       double VisSP = Vissas/Vispent;
+       double VisSSom = VisST + VisSP + 1;
+       double VisPSom = VisPT + VisPS + 1;
+       double VisTSom = VisTS + VisTP + 1;
+       double VisSom = VisSSom + VisPSom + VisTSom;
+       double VisSGew = VisSSom/VisSom;
+       double VisPGew = VisPSom/VisSom;
+       double VisTGew = VisTSom/VisSom;
+       double VisGew = VisSGew + VisTGew + VisPGew;
+
+       VisSTLabel.Text = " " + VisST;
+       VisTSLabel.Text = " " + VisTS;
+       VisTPLabel.Text = " " + VisTP;
+       VisPTLabel.Text = " " + VisPT;
+       VisPSLabel.Text = " " + VisPS;
+       VisSPLabel.Text = " " + VisSP;
+       VisSSomLabel.Text = " " + VisSSom;
+       VisPSomLabel.Text = " " + VisPSom;
+       VisTSomLabel.Text = " " + VisTSom;
+       VisSomLabel.Text = " " + VisSom;
+       VisSGewLabel.Text = " " + VisSGew;
+       VisPGewLabel.Text = " " + VisPGew;
+       VisTGewLabel.Text = " " + VisTGew;
+       VisGewLabel.Text = " " + VisGew;
+
+       <%-- Matrix Prijstool --%>
+       double PrijsST = Prijssas/Prijstab;
+       double PrijsTS = Prijstab/Prijssas;
+       double PrijsTP = Prijstab/Prijspent;
+       double PrijsPT = Prijspent/Prijstab;
+       double PrijsPS = Prijspent/Prijssas;
+       double PrijsSP = Prijssas/Prijspent;
+       double PrijsSSom = PrijsST + PrijsSP + 1;
+       double PrijsPSom = PrijsPT + PrijsPS + 1;
+       double PrijsTSom = PrijsTS + PrijsTP + 1;
+       double PrijsSom = PrijsSSom + PrijsPSom + PrijsTSom;
+       double PrijsSGew = PrijsSSom/PrijsSom;
+       double PrijsPGew = PrijsPSom/PrijsSom;
+       double PrijsTGew = PrijsTSom/PrijsSom;
+       double PrijsGew = PrijsSGew + PrijsTGew + PrijsPGew;
+
+       PrijsSTLabel.Text = " " + PrijsST;
+       PrijsTSLabel.Text = " " + PrijsTS;
+       PrijsTPLabel.Text = " " + PrijsTP;
+       PrijsPTLabel.Text = " " + PrijsPT;
+       PrijsPSLabel.Text = " " + PrijsPS;
+       PrijsSPLabel.Text = " " + PrijsSP;
+       PrijsSSomLabel.Text = " " + PrijsSSom;
+       PrijsPSomLabel.Text = " " + PrijsPSom;
+       PrijsTSomLabel.Text = " " + PrijsTSom;
+       PrijsSomLabel.Text = " " + PrijsSom;
+       PrijsSGewLabel.Text = " " + PrijsSGew;
+       PrijsPGewLabel.Text = " " + PrijsPGew;
+       PrijsTGewLabel.Text = " " + PrijsTGew;
+       PrijsGewLabel.Text = " " + PrijsGew;
+       
+       <%-- Matrix Self-Servicetool --%>
+       double SelfST = Selfsas/Selftab;
+       double SelfTS = Selftab/Selfsas;
+       double SelfTP = Selftab/Selfpent;
+       double SelfPT = Selfpent/Selftab;
+       double SelfPS = Selfpent/Selfsas;
+       double SelfSP = Selfsas/Selfpent;
+       double SelfSSom = SelfST + SelfSP + 1;
+       double SelfPSom = SelfPT + SelfPS + 1;
+       double SelfTSom = SelfTS + SelfTP + 1;
+       double SelfSom = SelfSSom + SelfPSom + SelfTSom;
+       double SelfSGew = SelfSSom/SelfSom;
+       double SelfPGew = SelfPSom/SelfSom;
+       double SelfTGew = SelfTSom/SelfSom;
+       double SelfGew = SelfSGew + SelfTGew + SelfPGew;
+
+       SelfSTLabel.Text = " " + SelfST;
+       SelfTSLabel.Text = " " + SelfTS;
+       SelfTPLabel.Text = " " + SelfTP;
+       SelfPTLabel.Text = " " + SelfPT;
+       SelfPSLabel.Text = " " + SelfPS;
+       SelfSPLabel.Text = " " + SelfSP;
+       SelfSSomLabel.Text = " " + SelfSSom;
+       SelfPSomLabel.Text = " " + SelfPSom;
+       SelfTSomLabel.Text = " " + SelfTSom;
+       SelfSomLabel.Text = " " + SelfSom;
+       SelfSGewLabel.Text = " " + SelfSGew;
+       SelfPGewLabel.Text = " " + SelfPGew;
+       SelfTGewLabel.Text = " " + SelfTGew;
+       SelfGewLabel.Text = " " + SelfGew;
+
+       
+
+       <%-- Matrix Predictivetool --%>
+       double PredST = Predsas/Predtab;
+       double PredTS = Predtab/Predsas;
+       double PredTP = Predtab/Predpent;
+       double PredPT = Predpent/Predtab;
+       double PredPS = Predpent/Predsas;
+       double PredSP = Predsas/Predpent;
+       double PredSSom = PredST + PredSP + 1;
+       double PredPSom = PredPT + PredPS + 1;
+       double PredTSom = PredTS + PredTP + 1;
+       double PredSom = PredSSom + PredPSom + PredTSom;
+       double PredSGew = PredSSom/PredSom;
+       double PredPGew = PredPSom/PredSom;
+       double PredTGew = PredTSom/PredSom;
+       double PredGew = PredSGew + PredTGew + PredPGew;
+
+       PredSTLabel.Text = " " + PredST;
+       PredTSLabel.Text = " " + PredTS;
+       PredTPLabel.Text = " " + PredTP;
+       PredPTLabel.Text = " " + PredPT;
+       PredPSLabel.Text = " " + PredPS;
+       PredSPLabel.Text = " " + PredSP;
+       PredSSomLabel.Text = " " + PredSSom;
+       PredPSomLabel.Text = " " + PredPSom;
+       PredTSomLabel.Text = " " + PredTSom;
+       PredSomLabel.Text = " " + PredSom;
+       PredSGewLabel.Text = " " + PredSGew;
+       PredPGewLabel.Text = " " + PredPGew;
+       PredTGewLabel.Text = " " + PredTGew;
+       PredGewLabel.Text = " " + PredGew;
+
+       <%-- Matrix Mobieltool --%>
+       double MobST = Mobsas/Mobtab;
+       double MobTS = Mobtab/Mobsas;
+       double MobTP = Mobtab/Mobpent;
+       double MobPT = Mobpent/Mobtab;
+       double MobPS = Mobpent/Mobsas;
+       double MobSP = Mobsas/Mobpent;
+       double MobSSom = MobST + MobSP + 1;
+       double MobPSom = MobPT + MobPS + 1;
+       double MobTSom = MobTS + MobTP + 1;
+       double MobSom = MobSSom + MobPSom + MobTSom;
+       double MobSGew = MobSSom/MobSom;
+       double MobPGew = MobPSom/MobSom;
+       double MobTGew = MobTSom/MobSom;
+       double MobGew = MobSGew + MobTGew + MobPGew;
+
+       MobSTLabel.Text = " " + MobST;
+       MobTSLabel.Text = " " + MobTS;
+       MobTPLabel.Text = " " + MobTP;
+       MobPTLabel.Text = " " + MobPT;
+       MobPSLabel.Text = " " + MobPS;
+       MobSPLabel.Text = " " + MobSP;
+       MobSSomLabel.Text = " " + MobSSom;
+       MobPSomLabel.Text = " " + MobPSom;
+       MobTSomLabel.Text = " " + MobTSom;
+       MobSomLabel.Text = " " + MobSom;
+       MobSGewLabel.Text = " " + MobSGew;
+       MobPGewLabel.Text = " " + MobPGew;
+       MobTGewLabel.Text = " " + MobTGew;
+       MobGewLabel.Text = " " + MobGew;
+
+       <%-- Matrix Collaborationtool --%>
+       double ColST = Colsas/Coltab;
+       double ColTS = Coltab/Colsas;
+       double ColTP = Coltab/Colpent;
+       double ColPT = Colpent/Coltab;
+       double ColPS = Colpent/Colsas;
+       double ColSP = Colsas/Colpent;
+       double ColSSom = ColST + ColSP + 1;
+       double ColPSom = ColPT + ColPS + 1;
+       double ColTSom = ColTS + ColTP + 1;
+       double ColSom = ColSSom + ColPSom + ColTSom;
+       double ColSGew = ColSSom/ColSom;
+       double ColPGew = ColPSom/ColSom;
+       double ColTGew = ColTSom/ColSom;
+       double ColGew = ColSGew + ColTGew + ColPGew;
+
+       ColSTLabel.Text = " " + ColST;
+       ColTSLabel.Text = " " + ColTS;
+       ColTPLabel.Text = " " + ColTP;
+       ColPTLabel.Text = " " + ColPT;
+       ColPSLabel.Text = " " + ColPS;
+       ColSPLabel.Text = " " + ColSP;
+       ColSSomLabel.Text = " " + ColSSom;
+       ColPSomLabel.Text = " " + ColPSom;
+       ColTSomLabel.Text = " " + ColTSom;
+       ColSomLabel.Text = " " + ColSom;
+       ColSGewLabel.Text = " " + ColSGew;
+       ColPGewLabel.Text = " " + ColPGew;
+       ColTGewLabel.Text = " " + ColTGew;
+       ColGewLabel.Text = " " + ColGew;
+
+       <%-- Matrix Securitytool --%>
+       double SecST = Secsas/Sectab;
+       double SecTS = Sectab/Secsas;
+       double SecTP = Sectab/Secpent;
+       double SecPT = Secpent/Sectab;
+       double SecPS = Secpent/Secsas;
+       double SecSP = Secsas/Secpent;
+       double SecSSom = SecST + SecSP + 1;
+       double SecPSom = SecPT + SecPS + 1;
+       double SecTSom = SecTS + SecTP + 1;
+       double SecSom = SecSSom + SecPSom + SecTSom;
+       double SecSGew = SecSSom/SecSom;
+       double SecPGew = SecPSom/SecSom;
+       double SecTGew = SecTSom/SecSom;
+       double SecGew = SecSGew + SecTGew + SecPGew;
+
+       SecSTLabel.Text = " " + SecST;
+       SecTSLabel.Text = " " + SecTS;
+       SecTPLabel.Text = " " + SecTP;
+       SecPTLabel.Text = " " + SecPT;
+       SecPSLabel.Text = " " + SecPS;
+       SecSPLabel.Text = " " + SecSP;
+       SecSSomLabel.Text = " " + SecSSom;
+       SecPSomLabel.Text = " " + SecPSom;
+       SecTSomLabel.Text = " " + SecTSom;
+       SecSomLabel.Text = " " + SecSom;
+       SecSGewLabel.Text = " " + SecSGew;
+       SecPGewLabel.Text = " " + SecPGew;
+       SecTGewLabel.Text = " " + SecTGew;
+       SecGewLabel.Text = " " + SecGew;
 
       }
       
@@ -774,6 +1014,365 @@
         <td></td>
         <td><asp:Label id="GewogenTotaalLabel"  runat="server"/></td>
         <td><asp:Label id="SomTotaalLabel" runat="server"/></td>
+    </tr>
+    </table> 
+
+
+    <p></p>
+    <table class="table table-bordered table-hover">
+    <tr>
+        <th>Data</th>
+        <th>Sas</th>
+        <th>Tableau</th>
+        <th>Pentaho</th>
+        <th>Gewogen Score</th>
+        <th>Som</th>
+    </tr>
+    <tr>
+        <th>Sas</th>
+        <td>1</td>
+        <td><asp:Label id="DataSTLabel"  runat="server"/></td>
+        <td><asp:Label id="DataSPLabel"  runat="server"/></td>
+        <td><asp:Label id="DataSGewLabel"  runat="server"/></td>
+        <td><asp:Label id="DataSSomLabel"  runat="server"/></td>
+    </tr>
+    <tr>
+        <th>Tableau</th>
+        <td><asp:Label id="DataTSLabel"  runat="server"/></td>
+        <td>1</td>
+        <td><asp:Label id="DataTPLabel"  runat="server"/></td>
+        <td><asp:Label id="DataTGewLabel"  runat="server"/></td>
+        <td><asp:Label id="DataTSomLabel"  runat="server"/></td>
+    </tr>
+    <tr>
+        <th>Pentaho</th>
+        <td><asp:Label id="DataPSLabel"  runat="server"/></td>
+        <td><asp:Label id="DataPTLabel"  runat="server"/></td>
+        <td>1</td>
+        <td><asp:Label id="DataPGewLabel"  runat="server"/></td>
+        <td><asp:Label id="DataPSomLabel" runat="server"/></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><asp:Label id="DataGewLabel"  runat="server"/></td>
+        <td><asp:Label id="DataSomLabel" runat="server"/></td>
+    </tr>
+    </table> 
+
+    <p></p>
+    <table class="table table-bordered table-hover">
+    <tr>
+        <th>Visualisatie</th>
+        <th>Sas</th>
+        <th>Tableau</th>
+        <th>Pentaho</th>
+        <th>Gewogen Score</th>
+        <th>Som</th>
+    </tr>
+    <tr>
+        <th>Sas</th>
+        <td>1</td>
+        <td><asp:Label id="VisSTLabel"  runat="server"/></td>
+        <td><asp:Label id="VisSPLabel"  runat="server"/></td>
+        <td><asp:Label id="VisSGewLabel"  runat="server"/></td>
+        <td><asp:Label id="VisSSomLabel"  runat="server"/></td>
+    </tr>
+    <tr>
+        <th>Tableau</th>
+        <td><asp:Label id="VisTSLabel"  runat="server"/></td>
+        <td>1</td>
+        <td><asp:Label id="VisTPLabel"  runat="server"/></td>
+        <td><asp:Label id="VisTGewLabel"  runat="server"/></td>
+        <td><asp:Label id="VisTSomLabel"  runat="server"/></td>
+    </tr>
+    <tr>
+        <th>Pentaho</th>
+        <td><asp:Label id="VisPSLabel"  runat="server"/></td>
+        <td><asp:Label id="VisPTLabel"  runat="server"/></td>
+        <td>1</td>
+        <td><asp:Label id="VisPGewLabel"  runat="server"/></td>
+        <td><asp:Label id="VisPSomLabel" runat="server"/></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><asp:Label id="VisGewLabel"  runat="server"/></td>
+        <td><asp:Label id="VisSomLabel" runat="server"/></td>
+    </tr>
+    </table> 
+
+
+    <p></p>
+    <table class="table table-bordered table-hover">
+    <tr>
+        <th>Prijs</th>
+        <th>Sas</th>
+        <th>Tableau</th>
+        <th>Pentaho</th>
+        <th>Gewogen Score</th>
+        <th>Som</th>
+    </tr>
+    <tr>
+        <th>Sas</th>
+        <td>1</td>
+        <td><asp:Label id="PrijsSTLabel"  runat="server"/></td>
+        <td><asp:Label id="PrijsSPLabel"  runat="server"/></td>
+        <td><asp:Label id="PrijsSGewLabel"  runat="server"/></td>
+        <td><asp:Label id="PrijsSSomLabel"  runat="server"/></td>
+    </tr>
+    <tr>
+        <th>Tableau</th>
+        <td><asp:Label id="PrijsTSLabel"  runat="server"/></td>
+        <td>1</td>
+        <td><asp:Label id="PrijsTPLabel"  runat="server"/></td>
+        <td><asp:Label id="PrijsTGewLabel"  runat="server"/></td>
+        <td><asp:Label id="PrijsTSomLabel"  runat="server"/></td>
+    </tr>
+    <tr>
+        <th>Pentaho</th>
+        <td><asp:Label id="PrijsPSLabel"  runat="server"/></td>
+        <td><asp:Label id="PrijsPTLabel"  runat="server"/></td>
+        <td>1</td>
+        <td><asp:Label id="PrijsPGewLabel"  runat="server"/></td>
+        <td><asp:Label id="PrijsPSomLabel" runat="server"/></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><asp:Label id="PrijsGewLabel"  runat="server"/></td>
+        <td><asp:Label id="PrijsSomLabel" runat="server"/></td>
+    </tr>
+    </table> 
+
+
+    <p></p>
+    <table class="table table-bordered table-hover">
+    <tr>
+        <th>Self-Service</th>
+        <th>Sas</th>
+        <th>Tableau</th>
+        <th>Pentaho</th>
+        <th>Gewogen Score</th>
+        <th>Som</th>
+    </tr>
+    <tr>
+        <th>Sas</th>
+        <td>1</td>
+        <td><asp:Label id="SelfSTLabel"  runat="server"/></td>
+        <td><asp:Label id="SelfSPLabel"  runat="server"/></td>
+        <td><asp:Label id="SelfSGewLabel"  runat="server"/></td>
+        <td><asp:Label id="SelfSSomLabel"  runat="server"/></td>
+    </tr>
+    <tr>
+        <th>Tableau</th>
+        <td><asp:Label id="SelfTSLabel"  runat="server"/></td>
+        <td>1</td>
+        <td><asp:Label id="SelfTPLabel"  runat="server"/></td>
+        <td><asp:Label id="SelfTGewLabel"  runat="server"/></td>
+        <td><asp:Label id="SelfTSomLabel"  runat="server"/></td>
+    </tr>
+    <tr>
+        <th>Pentaho</th>
+        <td><asp:Label id="SelfPSLabel"  runat="server"/></td>
+        <td><asp:Label id="SelfPTLabel"  runat="server"/></td>
+        <td>1</td>
+        <td><asp:Label id="SelfPGewLabel"  runat="server"/></td>
+        <td><asp:Label id="SelfPSomLabel" runat="server"/></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><asp:Label id="SelfGewLabel"  runat="server"/></td>
+        <td><asp:Label id="SelfSomLabel" runat="server"/></td>
+    </tr>
+    </table> 
+
+
+    <p></p>
+    <table class="table table-bordered table-hover">
+    <tr>
+        <th>Predictive Analytics</th>
+        <th>Sas</th>
+        <th>Tableau</th>
+        <th>Pentaho</th>
+        <th>Gewogen Score</th>
+        <th>Som</th>
+    </tr>
+    <tr>
+        <th>Sas</th>
+        <td>1</td>
+        <td><asp:Label id="PredSTLabel"  runat="server"/></td>
+        <td><asp:Label id="PredSPLabel"  runat="server"/></td>
+        <td><asp:Label id="PredSGewLabel"  runat="server"/></td>
+        <td><asp:Label id="PredSSomLabel"  runat="server"/></td>
+    </tr>
+    <tr>
+        <th>Tableau</th>
+        <td><asp:Label id="PredTSLabel"  runat="server"/></td>
+        <td>1</td>
+        <td><asp:Label id="PredTPLabel"  runat="server"/></td>
+        <td><asp:Label id="PredTGewLabel"  runat="server"/></td>
+        <td><asp:Label id="PredTSomLabel"  runat="server"/></td>
+    </tr>
+    <tr>
+        <th>Pentaho</th>
+        <td><asp:Label id="PredPSLabel"  runat="server"/></td>
+        <td><asp:Label id="PredPTLabel"  runat="server"/></td>
+        <td>1</td>
+        <td><asp:Label id="PredPGewLabel"  runat="server"/></td>
+        <td><asp:Label id="PredPSomLabel" runat="server"/></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><asp:Label id="PredGewLabel"  runat="server"/></td>
+        <td><asp:Label id="PredSomLabel" runat="server"/></td>
+    </tr>
+    </table> 
+
+
+    <p></p>
+    <table class="table table-bordered table-hover">
+    <tr>
+        <th>Mobiel</th>
+        <th>Sas</th>
+        <th>Tableau</th>
+        <th>Pentaho</th>
+        <th>Gewogen Score</th>
+        <th>Som</th>
+    </tr>
+    <tr>
+        <th>Sas</th>
+        <td>1</td>
+        <td><asp:Label id="MobSTLabel"  runat="server"/></td>
+        <td><asp:Label id="MobSPLabel"  runat="server"/></td>
+        <td><asp:Label id="MobSGewLabel"  runat="server"/></td>
+        <td><asp:Label id="MobSSomLabel"  runat="server"/></td>
+    </tr>
+    <tr>
+        <th>Tableau</th>
+        <td><asp:Label id="MobTSLabel"  runat="server"/></td>
+        <td>1</td>
+        <td><asp:Label id="MobTPLabel"  runat="server"/></td>
+        <td><asp:Label id="MobTGewLabel"  runat="server"/></td>
+        <td><asp:Label id="MobTSomLabel"  runat="server"/></td>
+    </tr>
+    <tr>
+        <th>Pentaho</th>
+        <td><asp:Label id="MobPSLabel"  runat="server"/></td>
+        <td><asp:Label id="MobPTLabel"  runat="server"/></td>
+        <td>1</td>
+        <td><asp:Label id="MobPGewLabel"  runat="server"/></td>
+        <td><asp:Label id="MobPSomLabel" runat="server"/></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><asp:Label id="MobGewLabel"  runat="server"/></td>
+        <td><asp:Label id="MobSomLabel" runat="server"/></td>
+    </tr>
+    </table> 
+
+
+    <p></p>
+    <table class="table table-bordered table-hover">
+    <tr>
+        <th>Collaboration</th>
+        <th>Sas</th>
+        <th>Tableau</th>
+        <th>Pentaho</th>
+        <th>Gewogen Score</th>
+        <th>Som</th>
+    </tr>
+    <tr>
+        <th>Sas</th>
+        <td>1</td>
+        <td><asp:Label id="ColSTLabel"  runat="server"/></td>
+        <td><asp:Label id="ColSPLabel"  runat="server"/></td>
+        <td><asp:Label id="ColSGewLabel"  runat="server"/></td>
+        <td><asp:Label id="ColSSomLabel"  runat="server"/></td>
+    </tr>
+    <tr>
+        <th>Tableau</th>
+        <td><asp:Label id="ColTSLabel"  runat="server"/></td>
+        <td>1</td>
+        <td><asp:Label id="ColTPLabel"  runat="server"/></td>
+        <td><asp:Label id="ColTGewLabel"  runat="server"/></td>
+        <td><asp:Label id="ColTSomLabel"  runat="server"/></td>
+    </tr>
+    <tr>
+        <th>Pentaho</th>
+        <td><asp:Label id="ColPSLabel"  runat="server"/></td>
+        <td><asp:Label id="ColPTLabel"  runat="server"/></td>
+        <td>1</td>
+        <td><asp:Label id="ColPGewLabel"  runat="server"/></td>
+        <td><asp:Label id="ColPSomLabel" runat="server"/></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><asp:Label id="ColGewLabel"  runat="server"/></td>
+        <td><asp:Label id="ColSomLabel" runat="server"/></td>
+    </tr>
+    </table> 
+
+
+    <p></p>
+    <table class="table table-bordered table-hover">
+    <tr>
+        <th>Security</th>
+        <th>Sas</th>
+        <th>Tableau</th>
+        <th>Pentaho</th>
+        <th>Gewogen Score</th>
+        <th>Som</th>
+    </tr>
+    <tr>
+        <th>Sas</th>
+        <td>1</td>
+        <td><asp:Label id="SecSTLabel"  runat="server"/></td>
+        <td><asp:Label id="SecSPLabel"  runat="server"/></td>
+        <td><asp:Label id="SecSGewLabel"  runat="server"/></td>
+        <td><asp:Label id="SecSSomLabel"  runat="server"/></td>
+    </tr>
+    <tr>
+        <th>Tableau</th>
+        <td><asp:Label id="SecTSLabel"  runat="server"/></td>
+        <td>1</td>
+        <td><asp:Label id="SecTPLabel"  runat="server"/></td>
+        <td><asp:Label id="SecTGewLabel"  runat="server"/></td>
+        <td><asp:Label id="SecTSomLabel"  runat="server"/></td>
+    </tr>
+    <tr>
+        <th>Pentaho</th>
+        <td><asp:Label id="SecPSLabel"  runat="server"/></td>
+        <td><asp:Label id="SecPTLabel"  runat="server"/></td>
+        <td>1</td>
+        <td><asp:Label id="SecPGewLabel"  runat="server"/></td>
+        <td><asp:Label id="SecPSomLabel" runat="server"/></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><asp:Label id="SecGewLabel"  runat="server"/></td>
+        <td><asp:Label id="SecSomLabel" runat="server"/></td>
     </tr>
     </table> 
 
