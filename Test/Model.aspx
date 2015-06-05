@@ -1,8 +1,11 @@
 ﻿<%@ Page Title="Model"  Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Model.aspx.cs" Inherits="Test.Contact" %>
+<%@ Import Namespace="ChartDirector" %>
+<%@ Register TagPrefix="chart" Namespace="ChartDirector" Assembly="netchartdir" %>
+
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
    <script runat="server">
-       
+
       void Submit_Click(object Source, EventArgs e) 
       {
         double DataNum = 0;
@@ -228,6 +231,49 @@
             SecNum = 9;
             SecLabel.Text = "Voor Security selecteerde u: "+Security.SelectedItem.Text + " en dus de score: " + SecNum;
        }
+
+       if(DataNum > 0 && VisNum > 0 && PrijsNum > 0 && SelfNum > 0 && PredNum > 0 && MobNum > 0 && CollaNum > 0 && SecNum > 0){
+            Invullen.Visible=false;
+            Resultaat.Visible=true;
+ 
+       }
+       else{
+            Resultaat.Visible=false;
+            Invullen.Visible=true;
+       }
+
+
+
+       // The data for the chart
+    double[] data = {DataNum, VisNum, PrijsNum, SelfNum, PredNum, MobNum, CollaNum, SecNum};
+
+    // The labels for the chart
+    string[] labels = {"Data", "Visualisatie", "Prijs", "Self-Service", "Predictive Analytics", "Mobiel", "Collaboration", "Security"};
+
+    // Create a PolarChart object of size 450 x 350 pixels
+    PolarChart c = new PolarChart(450, 350);
+
+    // Set center of plot area at (225, 185) with radius 150 pixels
+    c.setPlotArea(225, 185, 150);
+
+    // Add an area layer to the polar chart
+    c.addAreaLayer(data, 0x9999ff);
+
+    // Set the labels to the angular axis as spokes
+    c.angularAxis().setLabels(labels);
+
+    // Output the chart
+    WebChartViewer1.Image = c.makeWebImage(Chart.PNG);
+
+    // Include tool tip for the chart
+    WebChartViewer1.ImageMap = c.getHTMLImageMap("", "",
+        "title='{label}: score = {value}'");
+
+       Chart.setLicenseCode("DEVP-A1B2-C3D4-E5F6-G7H8-J9K0");
+
+
+
+
 
        <%-- Berekeningen Data matrix --%>
        double Datavis = DataNum/VisNum;
@@ -872,9 +918,23 @@
        TotaalTLabel.Text = " " + TotaalT;
        TotaalPLabel.Text = " " + TotaalP;
 
-       TotaalSLabel1.Text = TotaalSLabel.Text;
-       TotaalTLabel1.Text = TotaalTLabel.Text;
-       TotaalPLabel1.Text = TotaalPLabel.Text;
+       TotaalSLabel1.Text = String.Format("{0:0.00}",TotaalS);
+       TotaalTLabel1.Text = String.Format("{0:0.00}",TotaalT);
+       TotaalPLabel1.Text = String.Format("{0:0.00}",TotaalP);
+
+       if(TotaalS > TotaalT && TotaalS > TotaalP){
+       ResultLink.Text = "SAS";
+       ResultLink.NavigateUrl = "~/Sas";
+       }
+       else if(TotaalT > TotaalS && TotaalT > TotaalP){
+       ResultLink.Text = "Tableau";
+       ResultLink.NavigateUrl = "~/Tableau";
+       }
+       else if(TotaalP > TotaalS && TotaalP > TotaalT){
+       ResultLink.Text = "Pentaho";
+       ResultLink.NavigateUrl = "~/Pentaho";
+       }
+       
       }
       
    </script>
@@ -882,7 +942,7 @@
 
       <h2>RTS Model</h2>
 
-      <table border="2" cellpadding="5" class="table table-bordered table-hover  table-responsive table-striped">
+      <table border="2" cellpadding="5" class="table table-bordered table-hover" style="text-align: center">
           <tr>
               <td>Data</td>
               <td>
@@ -982,8 +1042,11 @@
       </table>      
 <p><p>
 
+    <div style="text-align:center">
       <asp:Button class="btn btn-default" id="Submit" Text="Submit" OnClick="Submit_Click" runat="server"/>
-<p>
+    </div>
+
+<p><div style="display:none">
       <asp:Label id="DataLabel" Font-Name="Verdana" Font-Size="8pt" runat="server"/>
 <p>
     <asp:Label id="VisLabel" Font-Name="Verdana" Font-Size="8pt" runat="server"/>
@@ -1635,22 +1698,37 @@
         </tr>
     </table>
 
-    <table class="table table-bordered table-hover table-responsive">
+        </div>
+
+    <asp:Panel id="Resultaat" runat="server" visible="false">
+
+    <table class="table table-bordered table-hover table-responsive" style="text-align: center">
         <tr>
             <th></th>
-            <th>SAS VA</th>
-            <th>Tableau</th>
-            <th>Pentaho</th>
+            <th style="text-align: center">SAS VA</th>
+            <th style="text-align: center">Tableau</th>
+            <th style="text-align: center">Pentaho</th>
         </tr>
         <tr>
-            <th>Resultaat</th>
-            <td>TotaalSLabel1</td>
-            <td>TotaalTLabel1</td>
-            <td>TotaalPLabel1</td>
+            <th style="text-align: center">Resultaat</th>
+            <td><asp:Label id="TotaalSLabel1"  runat="server"/></td>
+            <td><asp:Label id="TotaalTLabel1"  runat="server"/></td>
+            <td><asp:Label id="TotaalPLabel1"  runat="server"/></td>
         </tr>
     </table>
 
+    <div style="text-align:center">
+    <chart:WebChartViewer id="WebChartViewer1" runat="server"/>
+    </div>
 
+    <div style="margin-top: 25px; text-align:center;">
+    <h4>De meest overeenkomende tool is <asp:HyperLink Text="Result" Id="ResultLink" Runat="Server" />. Klik op de link om extra uitleg te lezen.</h4>
+    </div>
+</asp:Panel>
+
+    <asp:Panel id="Invullen" runat="server" visible="false">
+        <h4 style="color:red">Gelieve eerst alle keuzes aan te duiden.</h4>
+        </asp:Panel>
 
 
 </asp:Content>
