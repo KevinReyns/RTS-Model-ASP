@@ -253,8 +253,8 @@
     // Create a PolarChart object of size 450 x 350 pixels
     PolarChart c = new PolarChart(450, 350);
 
-    // Set center of plot area at (225, 185) with radius 150 pixels
-    c.setPlotArea(225, 185, 150);
+    // Set center of plot area at (250, 185) with radius 150 pixels
+    c.setPlotArea(250, 185, 150);
 
     // Add an area layer to the polar chart
     c.addAreaLayer(data, 0x9999ff);
@@ -918,9 +918,56 @@
        TotaalTLabel.Text = " " + TotaalT;
        TotaalPLabel.Text = " " + TotaalP;
 
-       TotaalSLabel1.Text = String.Format("{0:0.00}",TotaalS);
-       TotaalTLabel1.Text = String.Format("{0:0.00}",TotaalT);
-       TotaalPLabel1.Text = String.Format("{0:0.00}",TotaalP);
+       if(TotaalS > TotaalT && TotaalS > TotaalP && TotaalP > TotaalT){
+       ResToolLabel1.Text = "SAS";
+       ResPercLabel1.Text = String.Format("{0:P2}",TotaalS);
+       ResToolLabel2.Text = "Pentaho";
+       ResPercLabel2.Text = String.Format("{0:P2}",TotaalP);
+       ResToolLabel3.Text = "Tableau";
+       ResPercLabel3.Text = String.Format("{0:P2}",TotaalT);
+       }
+       else if(TotaalS > TotaalT && TotaalS > TotaalP && TotaalT > TotaalP){
+       ResToolLabel1.Text = "SAS";
+       ResPercLabel1.Text = String.Format("{0:P2}",TotaalS);
+       ResToolLabel2.Text = "Tableau";
+       ResPercLabel2.Text = String.Format("{0:P2}",TotaalT);
+       ResToolLabel3.Text = "Pentaho";
+       ResPercLabel3.Text = String.Format("{0:P2}",TotaalP);
+       }
+       else if(TotaalP > TotaalT && TotaalP > TotaalS && TotaalT > TotaalS){
+       ResToolLabel1.Text = "Pentaho";
+       ResPercLabel1.Text = String.Format("{0:P2}",TotaalP);
+       ResToolLabel2.Text = "Tableau";
+       ResPercLabel2.Text = String.Format("{0:P2}",TotaalT);
+       ResToolLabel3.Text = "SAS";
+       ResPercLabel3.Text = String.Format("{0:P2}",TotaalS);
+       }
+       else if(TotaalP > TotaalT && TotaalP > TotaalS && TotaalS > TotaalT){
+       ResToolLabel1.Text = "Pentaho";
+       ResPercLabel1.Text = String.Format("{0:P2}",TotaalP);
+       ResToolLabel2.Text = "SAS";
+       ResPercLabel2.Text = String.Format("{0:P2}",TotaalS);
+       ResToolLabel3.Text = "Tableau";
+       ResPercLabel3.Text = String.Format("{0:P2}",TotaalT);
+       }
+       else if(TotaalT > TotaalP && TotaalT > TotaalS && TotaalS > TotaalP){
+       ResToolLabel1.Text = "Tableau";
+       ResPercLabel1.Text = String.Format("{0:P2}",TotaalT);
+       ResToolLabel2.Text = "SAS";
+       ResPercLabel2.Text = String.Format("{0:P2}",TotaalS);
+       ResToolLabel3.Text = "Pentaho";
+       ResPercLabel3.Text = String.Format("{0:P2}",TotaalP);
+       }
+       else if(TotaalT > TotaalP && TotaalT > TotaalS && TotaalP > TotaalS){
+       ResToolLabel1.Text = "Tableau";
+       ResPercLabel1.Text = String.Format("{0:P2}",TotaalT);
+       ResToolLabel2.Text = "Pentaho";
+       ResPercLabel2.Text = String.Format("{0:P2}",TotaalP);
+       ResToolLabel3.Text = "SAS";
+       ResPercLabel3.Text = String.Format("{0:P2}",TotaalS);
+       }
+
+
 
        if(TotaalS > TotaalT && TotaalS > TotaalP){
        ResultLink.Text = "SAS";
@@ -942,108 +989,114 @@
 
       <h2>RTS Model</h2>
 
-      <table border="2" cellpadding="5" class="table table-bordered table-hover" style="text-align: center">
-          <tr>
-              <td>Data</td>
-              <td>
-                  <asp:RadioButtonList id=Data runat="server" CellPadding="2" Cellspacing="20" RepeatDirection="Horizontal" RepeatLayout="Table">
-                     <asp:ListItem>Onbelangrijk</asp:ListItem>
-                     <asp:ListItem>Minder belangrijk</asp:ListItem>
-                     <asp:ListItem>Neutraal</asp:ListItem>
-                     <asp:ListItem>Belangrijk</asp:ListItem>
-                     <asp:ListItem>Zeer belangrijk</asp:ListItem>
-                  </asp:RadioButtonList>
-            </td>
-          </tr>
-          <tr>
-              <td>Visualisatie</td>
-              <td colspan="5">
-                  <asp:RadioButtonList id=Visualisatie runat="server" Cellspacing="20" RepeatDirection="Horizontal" RepeatLayout="Table">
-                     <asp:ListItem>Onbelangrijk</asp:ListItem>
-                     <asp:ListItem>Minder belangrijk</asp:ListItem>
-                     <asp:ListItem>Neutraal</asp:ListItem>
-                     <asp:ListItem>Belangrijk</asp:ListItem>
-                     <asp:ListItem>Zeer belangrijk</asp:ListItem>
-                  </asp:RadioButtonList>
-            </td>
-          </tr>
-          <tr>
-              <td>Prijs</td>
-              <td colspan="5">
-                  <asp:RadioButtonList id=Prijs runat="server" Cellspacing="20" RepeatDirection="Horizontal" RepeatLayout="Table">
-                     <asp:ListItem>Onbelangrijk</asp:ListItem>
-                     <asp:ListItem>Minder belangrijk</asp:ListItem>
-                     <asp:ListItem>Neutraal</asp:ListItem>
-                     <asp:ListItem>Belangrijk</asp:ListItem>
-                     <asp:ListItem>Zeer belangrijk</asp:ListItem>
-                  </asp:RadioButtonList>
-            </td>
-          </tr>
-          <tr>
-              <td>Self-Service</td>
-              <td colspan="5">
-                  <asp:RadioButtonList id=Selfservice runat="server" Cellspacing="20" RepeatDirection="Horizontal" RepeatLayout="Table">
-                     <asp:ListItem>Onbelangrijk</asp:ListItem>
-                     <asp:ListItem>Minder belangrijk</asp:ListItem>
-                     <asp:ListItem>Neutraal</asp:ListItem>
-                     <asp:ListItem>Belangrijk</asp:ListItem>
-                     <asp:ListItem>Zeer belangrijk</asp:ListItem>
-                  </asp:RadioButtonList>
-            </td>
-          </tr>
-          <tr>
-              <td>Predicitve Analytics</td>
-              <td colspan="5">
-                  <asp:RadioButtonList id=Predictive runat="server" Cellspacing="20" RepeatDirection="Horizontal" RepeatLayout="Table">
-                     <asp:ListItem>Onbelangrijk</asp:ListItem>
-                     <asp:ListItem>Minder belangrijk</asp:ListItem>
-                     <asp:ListItem>Neutraal</asp:ListItem>
-                     <asp:ListItem>Belangrijk</asp:ListItem>
-                     <asp:ListItem>Zeer belangrijk</asp:ListItem>
-                  </asp:RadioButtonList>
-            </td>
-          </tr>
-          <tr>
-              <td>Mobiel</td>
-              <td colspan="5">
-                  <asp:RadioButtonList id=Mobiel runat="server" Cellspacing="20" RepeatDirection="Horizontal" RepeatLayout="Table">
-                     <asp:ListItem>Onbelangrijk</asp:ListItem>
-                     <asp:ListItem>Minder belangrijk</asp:ListItem>
-                     <asp:ListItem>Neutraal</asp:ListItem>
-                     <asp:ListItem>Belangrijk</asp:ListItem>
-                     <asp:ListItem>Zeer belangrijk</asp:ListItem>
-                  </asp:RadioButtonList>
-            </td>
-          </tr>
-          <tr>
-              <td>Collaboration</td>
-              <td colspan="5">
-                  <asp:RadioButtonList id=Collaboration runat="server" Cellspacing="20" RepeatDirection="Horizontal" RepeatLayout="Table">
-                     <asp:ListItem>Onbelangrijk</asp:ListItem>
-                     <asp:ListItem>Minder belangrijk</asp:ListItem>
-                     <asp:ListItem>Neutraal</asp:ListItem>
-                     <asp:ListItem>Belangrijk</asp:ListItem>
-                     <asp:ListItem>Zeer belangrijk</asp:ListItem>
-                  </asp:RadioButtonList>
-            </td>
-          </tr>
-          <tr>
-              <td>Security</td>
-              <td colspan="5">
-                  <asp:RadioButtonList id=Security runat="server" Cellspacing="20" RepeatDirection="Horizontal" RepeatLayout="Table">
-                     <asp:ListItem>Onbelangrijk</asp:ListItem>
-                     <asp:ListItem>Minder belangrijk</asp:ListItem>
-                     <asp:ListItem>Neutraal</asp:ListItem>
-                     <asp:ListItem>Belangrijk</asp:ListItem>
-                     <asp:ListItem>Zeer belangrijk</asp:ListItem>
-                  </asp:RadioButtonList>
-            </td>
-          </tr>
-      </table>      
-<p><p>
 
-    <div style="text-align:center">
-      <asp:Button class="btn btn-default" id="Submit" Text="Submit" OnClick="Submit_Click" runat="server"/>
+                  <table class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:20%; margin-bottom:0px;">
+                      <tr>
+                          <td style="text-align:center; font-size:19px;">Data</td>
+                      </tr>
+                  </table>
+                  <asp:RadioButtonList id=Data runat="server"  RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:80%; margin-bottom:0px;">
+                     <asp:ListItem>Onbelangrijk</asp:ListItem>
+                     <asp:ListItem>Minder belangrijk</asp:ListItem>
+                     <asp:ListItem>Neutraal</asp:ListItem>
+                     <asp:ListItem>Belangrijk</asp:ListItem>
+                     <asp:ListItem>Zeer belangrijk</asp:ListItem>
+                  </asp:RadioButtonList>
+
+                  <table class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:20%; margin-bottom:0px;">
+                      <tr>
+                          <td style="text-align:center; font-size:19px;">Visualisatie</td>
+                      </tr>
+                  </table>
+                  <asp:RadioButtonList id=Visualisatie runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:80%; margin-bottom:0px;">
+                     <asp:ListItem>Onbelangrijk</asp:ListItem>
+                     <asp:ListItem>Minder belangrijk</asp:ListItem>
+                     <asp:ListItem>Neutraal</asp:ListItem>
+                     <asp:ListItem>Belangrijk</asp:ListItem>
+                     <asp:ListItem>Zeer belangrijk</asp:ListItem>
+                  </asp:RadioButtonList>
+            
+                  <table class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:20%; margin-bottom:0px;">
+                      <tr>
+                          <td style="text-align:center; font-size:19px;">Prijs</td>
+                      </tr>
+                  </table>
+                  <asp:RadioButtonList id=Prijs runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:80%; margin-bottom:0px;">
+                     <asp:ListItem>Onbelangrijk</asp:ListItem>
+                     <asp:ListItem>Minder belangrijk</asp:ListItem>
+                     <asp:ListItem>Neutraal</asp:ListItem>
+                     <asp:ListItem>Belangrijk</asp:ListItem>
+                     <asp:ListItem>Zeer belangrijk</asp:ListItem>
+                  </asp:RadioButtonList>
+
+                  <table class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:20%; margin-bottom:0px;">
+                      <tr>
+                          <td style="text-align:center; font-size:19px;">Self-Service</td>
+                      </tr>
+                  </table>
+                  <asp:RadioButtonList id=Selfservice runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:80%; margin-bottom:0px;">
+                     <asp:ListItem>Onbelangrijk</asp:ListItem>
+                     <asp:ListItem>Minder belangrijk</asp:ListItem>
+                     <asp:ListItem>Neutraal</asp:ListItem>
+                     <asp:ListItem>Belangrijk</asp:ListItem>
+                     <asp:ListItem>Zeer belangrijk</asp:ListItem>
+                  </asp:RadioButtonList>
+
+                  <table class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:20%; margin-bottom:0px;">
+                      <tr>
+                          <td style="text-align:center; font-size:19px;">Predictive Analytics</td>
+                      </tr>
+                  </table>
+                  <asp:RadioButtonList id=Predictive runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:80%; margin-bottom:0px;">
+                     <asp:ListItem>Onbelangrijk</asp:ListItem>
+                     <asp:ListItem>Minder belangrijk</asp:ListItem>
+                     <asp:ListItem>Neutraal</asp:ListItem>
+                     <asp:ListItem>Belangrijk</asp:ListItem>
+                     <asp:ListItem>Zeer belangrijk</asp:ListItem>
+                  </asp:RadioButtonList>
+
+                  <table class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:20%; margin-bottom:0px;">
+                      <tr>
+                          <td style="text-align:center; font-size:19px;">Mobiel</td>
+                      </tr>
+                  </table>
+                  <asp:RadioButtonList id=Mobiel runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:80%; margin-bottom:0px;">
+                     <asp:ListItem>Onbelangrijk</asp:ListItem>
+                     <asp:ListItem>Minder belangrijk</asp:ListItem>
+                     <asp:ListItem>Neutraal</asp:ListItem>
+                     <asp:ListItem>Belangrijk</asp:ListItem>
+                     <asp:ListItem>Zeer belangrijk</asp:ListItem>
+                  </asp:RadioButtonList>
+
+                  <table class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:20%; margin-bottom:0px;">
+                      <tr>
+                          <td style="text-align:center; font-size:19px;">Collaboration</td>
+                      </tr>
+                  </table>
+                  <asp:RadioButtonList id=Collaboration runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:80%; margin-bottom:0px;">
+                     <asp:ListItem>Onbelangrijk</asp:ListItem>
+                     <asp:ListItem>Minder belangrijk</asp:ListItem>
+                     <asp:ListItem>Neutraal</asp:ListItem>
+                     <asp:ListItem>Belangrijk</asp:ListItem>
+                     <asp:ListItem>Zeer belangrijk</asp:ListItem>
+                  </asp:RadioButtonList>
+       
+                  <table class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:20%;">
+                      <tr>
+                          <td style="text-align:center; font-size:19px;">Security</td>
+                      </tr>
+                  </table>
+                  <asp:RadioButtonList id=Security runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:80%;">
+                     <asp:ListItem>Onbelangrijk</asp:ListItem>
+                     <asp:ListItem>Minder belangrijk</asp:ListItem>
+                     <asp:ListItem>Neutraal</asp:ListItem>
+                     <asp:ListItem>Belangrijk</asp:ListItem>
+                     <asp:ListItem>Zeer belangrijk</asp:ListItem>
+                  </asp:RadioButtonList>
+      
+
+    <div style="text-align:center; margin-top:25px;">
+      <asp:Button class="btn btn-default" id="Submit" Text="Voer uit" OnClick="Submit_Click" runat="server"/>
     </div>
 
 <p><div style="display:none">
@@ -1702,24 +1755,35 @@
 
     <asp:Panel id="Resultaat" runat="server" visible="false">
 
-    <table class="table table-bordered table-hover table-responsive" style="text-align: center">
-        <tr>
+    <div style="text-align:center; margin-top:25px;">
+        <chart:WebChartViewer id="WebChartViewer1" runat="server"/>
+    </div>
+    <div style="text-align:center">
+    <img src="Images/White.png" style="width:450px;height:10px;margin-top:-32px;" />
+    </div>
+
+    <table class="table table-bordered table-hover table-responsive" style="text-align: center; margin-top:10px;">
+        <thead>
             <th></th>
-            <th style="text-align: center">SAS VA</th>
-            <th style="text-align: center">Tableau</th>
-            <th style="text-align: center">Pentaho</th>
+            <th style="text-align: center">Tool</th>
+            <th style="text-align: center">Resultaat</th>
+        </thead>
+        <tr>
+            <th style="text-align: center">1ste</th>
+            <td><asp:Label id="ResToolLabel1"  runat="server"/></td>
+            <td><asp:Label id="ResPercLabel1"  runat="server"/></td>
         </tr>
         <tr>
-            <th style="text-align: center">Resultaat</th>
-            <td><asp:Label id="TotaalSLabel1"  runat="server"/></td>
-            <td><asp:Label id="TotaalTLabel1"  runat="server"/></td>
-            <td><asp:Label id="TotaalPLabel1"  runat="server"/></td>
+            <th style="text-align: center">2de</th>
+            <td><asp:Label id="ResToolLabel2"  runat="server"/></td>
+            <td><asp:Label id="ResPercLabel2"  runat="server"/></td>
+        </tr>
+        <tr>
+            <th style="text-align: center">3de</th>
+            <td><asp:Label id="ResToolLabel3"  runat="server"/></td>
+            <td><asp:Label id="ResPercLabel3"  runat="server"/></td>
         </tr>
     </table>
-
-    <div style="text-align:center">
-    <chart:WebChartViewer id="WebChartViewer1" runat="server"/>
-    </div>
 
     <div style="margin-top: 25px; text-align:center;">
     <h4>De meest overeenkomende tool is <asp:HyperLink Text="Result" Id="ResultLink" Runat="Server" />. Klik op de link om extra uitleg te lezen.</h4>
@@ -1729,6 +1793,5 @@
     <asp:Panel id="Invullen" runat="server" visible="false">
         <h4 style="color:red">Gelieve eerst alle keuzes aan te duiden.</h4>
         </asp:Panel>
-
 
 </asp:Content>

@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="jumbotron">
-        <h1>No fool with the right reporting tool!</h1>
+        <h1 style="font-size:60px;">No fool with the right reporting tool!</h1>
         <p class="lead">Een objectieve aanpak tot het bekomen van de meest geschikte rapporteringsoplossing voor uw business.
         <p><a href="./Model" class="btn btn-primary btn-lg">Probeer het nu zelf uit &raquo;</a></p>
     </div>
