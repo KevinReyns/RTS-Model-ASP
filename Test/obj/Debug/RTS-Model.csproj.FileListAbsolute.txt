@@ -47,6 +47,8 @@ C:\Users\Kevin\Documents\GitHub\RTS-Model-ASP\Test\bin\Microsoft.Owin.Security.G
 C:\Users\Kevin\Documents\GitHub\RTS-Model-ASP\Test\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Kevin\Documents\GitHub\RTS-Model-ASP\Test\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Kevin\Documents\GitHub\RTS-Model-ASP\Test\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Kevin\Documents\GitHub\RTS-Model-ASP\Test\obj\Debug\Interop.ChartDirector.dll
+C:\Users\Kevin\Documents\GitHub\RTS-Model-ASP\Test\obj\Debug\Interop.VBA.dll
+C:\Users\Kevin\Documents\GitHub\RTS-Model-ASP\Test\obj\Debug\RTS-Model.csproj.ResolveComReference.cache
 C:\Users\Kevin\Documents\GitHub\RTS-Model-ASP\Test\obj\Debug\Test.dll
 C:\Users\Kevin\Documents\GitHub\RTS-Model-ASP\Test\obj\Debug\Test.pdb
-C:\Users\Kevin\Documents\GitHub\RTS-Model-ASP\Test\obj\Debug\RTS-Model.csprojResolveAssemblyReference.cache
