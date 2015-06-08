@@ -919,33 +919,33 @@
        TotaalPLabel.Text = " " + TotaalP;
 
        if(TotaalS > TotaalT && TotaalS > TotaalP && TotaalP > TotaalT){
-       ResToolLabel1.Text = "SAS";
+       ResToolLabel1.Text = "SAS Visual Analytics";
        ResPercLabel1.Text = String.Format("{0:P2}",TotaalS);
-       ResToolLabel2.Text = "Pentaho";
+       ResToolLabel2.Text = "Pentaho Business Analytics";
        ResPercLabel2.Text = String.Format("{0:P2}",TotaalP);
        ResToolLabel3.Text = "Tableau";
        ResPercLabel3.Text = String.Format("{0:P2}",TotaalT);
        }
        else if(TotaalS > TotaalT && TotaalS > TotaalP && TotaalT > TotaalP){
-       ResToolLabel1.Text = "SAS";
+       ResToolLabel1.Text = "SAS Visual Analytics";
        ResPercLabel1.Text = String.Format("{0:P2}",TotaalS);
        ResToolLabel2.Text = "Tableau";
        ResPercLabel2.Text = String.Format("{0:P2}",TotaalT);
-       ResToolLabel3.Text = "Pentaho";
+       ResToolLabel3.Text = "Pentaho Business Analytics";
        ResPercLabel3.Text = String.Format("{0:P2}",TotaalP);
        }
        else if(TotaalP > TotaalT && TotaalP > TotaalS && TotaalT > TotaalS){
-       ResToolLabel1.Text = "Pentaho";
+       ResToolLabel1.Text = "Pentaho Business Analytics";
        ResPercLabel1.Text = String.Format("{0:P2}",TotaalP);
        ResToolLabel2.Text = "Tableau";
        ResPercLabel2.Text = String.Format("{0:P2}",TotaalT);
-       ResToolLabel3.Text = "SAS";
+       ResToolLabel3.Text = "SAS Visual Analytics";
        ResPercLabel3.Text = String.Format("{0:P2}",TotaalS);
        }
        else if(TotaalP > TotaalT && TotaalP > TotaalS && TotaalS > TotaalT){
-       ResToolLabel1.Text = "Pentaho";
+       ResToolLabel1.Text = "Pentaho Business Analytics";
        ResPercLabel1.Text = String.Format("{0:P2}",TotaalP);
-       ResToolLabel2.Text = "SAS";
+       ResToolLabel2.Text = "SAS Visual Analytics";
        ResPercLabel2.Text = String.Format("{0:P2}",TotaalS);
        ResToolLabel3.Text = "Tableau";
        ResPercLabel3.Text = String.Format("{0:P2}",TotaalT);
@@ -953,33 +953,33 @@
        else if(TotaalT > TotaalP && TotaalT > TotaalS && TotaalS > TotaalP){
        ResToolLabel1.Text = "Tableau";
        ResPercLabel1.Text = String.Format("{0:P2}",TotaalT);
-       ResToolLabel2.Text = "SAS";
+       ResToolLabel2.Text = "SAS Visual Analytics";
        ResPercLabel2.Text = String.Format("{0:P2}",TotaalS);
-       ResToolLabel3.Text = "Pentaho";
+       ResToolLabel3.Text = "Pentaho Business Analytics";
        ResPercLabel3.Text = String.Format("{0:P2}",TotaalP);
        }
        else if(TotaalT > TotaalP && TotaalT > TotaalS && TotaalP > TotaalS){
        ResToolLabel1.Text = "Tableau";
        ResPercLabel1.Text = String.Format("{0:P2}",TotaalT);
-       ResToolLabel2.Text = "Pentaho";
+       ResToolLabel2.Text = "Pentaho Business Analytics";
        ResPercLabel2.Text = String.Format("{0:P2}",TotaalP);
-       ResToolLabel3.Text = "SAS";
+       ResToolLabel3.Text = "SAS Visual Analytics";
        ResPercLabel3.Text = String.Format("{0:P2}",TotaalS);
        }
 
 
 
        if(TotaalS > TotaalT && TotaalS > TotaalP){
-       ResultLink.Text = "SAS";
-       ResultLink.NavigateUrl = "~/Sas";
+       ResultLink.Text = "SAS Visual Analytics";
+       ResultLink.NavigateUrl = "http://www.sas.com/en_be/software/business-intelligence/visual-analytics.html";
        }
        else if(TotaalT > TotaalS && TotaalT > TotaalP){
        ResultLink.Text = "Tableau";
-       ResultLink.NavigateUrl = "~/Tableau";
+       ResultLink.NavigateUrl = "http://www.tableau.com/";
        }
        else if(TotaalP > TotaalS && TotaalP > TotaalT){
-       ResultLink.Text = "Pentaho";
-       ResultLink.NavigateUrl = "~/Pentaho";
+       ResultLink.Text = "Pentaho Business Analytics";
+       ResultLink.NavigateUrl = "http://www.pentaho.com/product/business-visualization-analytics";
        }
        
       }
