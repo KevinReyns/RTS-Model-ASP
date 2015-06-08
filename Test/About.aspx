@@ -51,7 +51,6 @@
             <img src="Images/Mail.png" style="height:40px; width:35px;"/><a style="margin-left:10px;" href="mailto:kevin_reyns@hotmail.com">kevin_reyns@hotmail.com</a></br>
             <img src="Images/LinkedIn.png" style="height:25px; width:25px;"/><a style="margin-left:10px; vertical-align:bottom;" href="https://be.linkedin.com/in/kevinreyns" target="_blank">Kevin Reyns</a></br>
             <img src="Images/Twitter.png" style="height:25px; width:25px; margin-top:10px;"/><a style="margin-left:10px; vertical-align:bottom;" href="https://twitter.com/ReynsKevin" target="_blank">@ReynsKevin</a>
-
         </div>
         <div class="col-md-6" style="text-align:center">
             <img class="img-circle img-responsive" src="Images/Wouter.jpg" src="Images/Kevin.jpg" style="display: block;margin-left: auto;margin-right: auto;"/>
@@ -59,7 +58,6 @@
             <img src="Images/Mail.png" style="height:40px; width:35px;"/><a style="margin-left:10px;" href="mailto:wouter.baeckelmans@gmail.com">wouter.baeckelmans@gmail.com</a></br>
             <img src="Images/LinkedIn.png" style="height:25px; width:25px;"/><a style="margin-left:10px; vertical-align:bottom;" href="https://be.linkedin.com/in/wouterbaeckelmans" target="_blank">Wouter Baeckelmans</a></br>
             <img src="Images/Twitter.png" style="height:25px; width:25px; margin-top:10px;"/><a style="margin-left:10px; vertical-align:bottom;" href="https://twitter.com/Baeckelmans_W" target="_blank">@Baeckelmans_W</a>
-
         </div>
     </div>
 </asp:Content>
