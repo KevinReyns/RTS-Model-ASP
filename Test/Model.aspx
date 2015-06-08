@@ -1005,7 +1005,7 @@
 
                   <table class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:20%; margin-bottom:0px;">
                       <tr>
-                          <td style="text-align:center; font-size:19px;">Visualisatie</td>
+                          <td style="text-align:center; font-size:19px;">Visualisation</td>
                       </tr>
                   </table>
                   <asp:RadioButtonList id=Visualisatie runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:80%; margin-bottom:0px;">
@@ -1018,7 +1018,7 @@
             
                   <table class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:20%; margin-bottom:0px;">
                       <tr>
-                          <td style="text-align:center; font-size:19px;">Prijs</td>
+                          <td style="text-align:center; font-size:19px;">Price</td>
                       </tr>
                   </table>
                   <asp:RadioButtonList id=Prijs runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:80%; margin-bottom:0px;">
@@ -1031,7 +1031,7 @@
 
                   <table class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:20%; margin-bottom:0px;">
                       <tr>
-                          <td style="text-align:center; font-size:19px;">Self-Service</td>
+                          <td style="text-align:center; font-size:19px;">Self-service</td>
                       </tr>
                   </table>
                   <asp:RadioButtonList id=Selfservice runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:80%; margin-bottom:0px;">
@@ -1057,7 +1057,7 @@
 
                   <table class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:20%; margin-bottom:0px;">
                       <tr>
-                          <td style="text-align:center; font-size:19px;">Mobiel</td>
+                          <td style="text-align:center; font-size:19px;">Mobile</td>
                       </tr>
                   </table>
                   <asp:RadioButtonList id=Mobiel runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:80%; margin-bottom:0px;">
