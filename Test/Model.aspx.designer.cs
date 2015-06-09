@@ -109,16 +109,43 @@ namespace Test {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        /// protected global::ChartDirector.WebChartViewer WebChartViewer1;
+        protected global::ChartDirector.WebChartViewer WebChartViewer1;
         
         /// <summary>
-        /// ResToolLabel1 control.
+        /// WebChartViewer2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ResToolLabel1;
+        protected global::ChartDirector.WebChartViewer WebChartViewer2;
+        
+        /// <summary>
+        /// WebChartViewer3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::ChartDirector.WebChartViewer WebChartViewer3;
+        
+        /// <summary>
+        /// WebChartViewer4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::ChartDirector.WebChartViewer WebChartViewer4;
+        
+        /// <summary>
+        /// ResToolLink1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink ResToolLink1;
         
         /// <summary>
         /// ResPercLabel1 control.
@@ -130,13 +157,40 @@ namespace Test {
         protected global::System.Web.UI.WebControls.Label ResPercLabel1;
         
         /// <summary>
-        /// ResToolLabel2 control.
+        /// PH1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ResToolLabel2;
+        protected global::System.Web.UI.WebControls.HyperLink PH1;
+        
+        /// <summary>
+        /// TH1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink TH1;
+        
+        /// <summary>
+        /// SH1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink SH1;
+        
+        /// <summary>
+        /// ResToolLink2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink ResToolLink2;
         
         /// <summary>
         /// ResPercLabel2 control.
@@ -148,13 +202,40 @@ namespace Test {
         protected global::System.Web.UI.WebControls.Label ResPercLabel2;
         
         /// <summary>
-        /// ResToolLabel3 control.
+        /// PH2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ResToolLabel3;
+        protected global::System.Web.UI.WebControls.HyperLink PH2;
+        
+        /// <summary>
+        /// TH2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink TH2;
+        
+        /// <summary>
+        /// SH2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink SH2;
+        
+        /// <summary>
+        /// ResToolLink3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink ResToolLink3;
         
         /// <summary>
         /// ResPercLabel3 control.
@@ -164,6 +245,33 @@ namespace Test {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label ResPercLabel3;
+        
+        /// <summary>
+        /// PH3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink PH3;
+        
+        /// <summary>
+        /// TH3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink TH3;
+        
+        /// <summary>
+        /// SH3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink SH3;
         
         /// <summary>
         /// ResultLink control.

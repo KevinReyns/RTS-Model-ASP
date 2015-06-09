@@ -242,35 +242,154 @@
             Invullen.Visible=true;
        }
 
+       <%-- Toolscores --%>
+       double Datasas = 5;
+       double Datapent = 7;
+       double Datatab = 3;
+
+       double Vissas = 5;
+       double Vispent = 3;
+       double Vistab = 7;
+
+       double Prijssas = 3;
+       double Prijspent = 7;
+       double Prijstab = 5;
+
+       double Selfsas = 5;
+       double Selfpent = 3;
+       double Selftab = 7;
+
+       double Predsas = 7;
+       double Predpent = 1;
+       double Predtab = 3;
+
+       double Mobsas = 5;
+       double Mobpent = 3;
+       double Mobtab = 7;
+
+       double Colsas = 3;
+       double Colpent = 3;
+       double Coltab = 7;
+
+       double Secsas = 5;
+       double Secpent = 7;
+       double Sectab = 3;
 
 
-       // The data for the chart
-    double[] data = {DataNum, VisNum, PrijsNum, SelfNum, PredNum, MobNum, CollaNum, SecNum};
+
+       // The data for the 1st chart
+    double[] data1 = {DataNum, VisNum, PrijsNum, SelfNum, PredNum, MobNum, CollaNum, SecNum};
 
     // The labels for the chart
-    string[] labels = {"Data", "Visualisatie", "Prijs", "Self-Service", "Predictive Analytics", "Mobiel", "Collaboration", "Security"};
+    string[] labels1 = {"Data", "Visualisatie", "Prijs", "Self-Service", "Predictive Analytics", "Mobiel", "Collaboration", "Security"};
 
     // Create a PolarChart object of size 450 x 350 pixels
-    PolarChart c = new PolarChart(450, 400);
+    PolarChart c1 = new PolarChart(450, 400);
 
     // Set center of plot area at (250, 185) with radius 150 pixels
-    c.setPlotArea(250, 185, 150);
+    c1.setPlotArea(250, 185, 150);
 
     // Add an area layer to the polar chart
-    c.addAreaLayer(data, 0x9999ff);
+    c1.addAreaLayer(data1, 0x9999ff);
 
     // Set the labels to the angular axis as spokes
-    c.angularAxis().setLabels(labels);
+    c1.angularAxis().setLabels(labels1);
 
     // Output the chart
-    WebChartViewer1.Image = c.makeWebImage(Chart.PNG);
+    WebChartViewer1.Image = c1.makeWebImage(Chart.PNG);
 
     // Include tool tip for the chart
-    WebChartViewer1.ImageMap = c.getHTMLImageMap("", "",
+    WebChartViewer1.ImageMap = c1.getHTMLImageMap("", "",
         "title='{label}: score = {value}'");
 
        Chart.setLicenseCode("DEVP-A1B2-C3D4-E5F6-G7H8-J9K0");
 
+       
+
+       // The data for the sas chart
+    double[] data2 = {Datasas, Vissas, Prijssas, Selfsas, Predsas, Mobsas, Colsas, Secsas};
+
+    // The labels for the chart
+    string[] labels2 = {"Data", "Visualisatie", "Prijs", "Self-Service", "Predictive Analytics", "Mobiel", "Collaboration", "Security"};
+
+    // Create a PolarChart object of size 450 x 350 pixels
+    PolarChart c2 = new PolarChart(450, 400);
+
+    // Set center of plot area at (250, 185) with radius 150 pixels
+    c2.setPlotArea(250, 185, 150);
+
+    // Add an area layer to the polar chart
+    c2.addAreaLayer(data2, 0x9999ff);
+
+    // Set the labels to the angular axis as spokes
+    c2.angularAxis().setLabels(labels2);
+
+    // Output the chart
+    WebChartViewer2.Image = c2.makeWebImage(Chart.PNG);
+
+    // Include tool tip for the chart
+    WebChartViewer2.ImageMap = c2.getHTMLImageMap("", "",
+        "title='{label}: score = {value}'");
+
+       Chart.setLicenseCode("DEVP-A1B2-C3D4-E5F6-G7H8-J9K0");
+
+
+
+       // The data for the tab chart
+    double[] data3 = {Datatab, Vistab, Prijstab, Selftab, Predtab, Mobtab, Coltab, Sectab};
+
+    // The labels for the chart
+    string[] labels3 = {"Data", "Visualisatie", "Prijs", "Self-Service", "Predictive Analytics", "Mobiel", "Collaboration", "Security"};
+
+    // Create a PolarChart object of size 450 x 350 pixels
+    PolarChart c3 = new PolarChart(450, 400);
+
+    // Set center of plot area at (250, 185) with radius 150 pixels
+    c3.setPlotArea(250, 185, 150);
+
+    // Add an area layer to the polar chart
+    c3.addAreaLayer(data3, 0x9999ff);
+
+    // Set the labels to the angular axis as spokes
+    c3.angularAxis().setLabels(labels3);
+
+    // Output the chart
+    WebChartViewer3.Image = c3.makeWebImage(Chart.PNG);
+
+    // Include tool tip for the chart
+    WebChartViewer3.ImageMap = c3.getHTMLImageMap("", "",
+        "title='{label}: score = {value}'");
+
+       Chart.setLicenseCode("DEVP-A1B2-C3D4-E5F6-G7H8-J9K0");
+
+
+
+       // The data for the pent chart
+    double[] data4 = {Datapent, Vispent, Prijspent, Selfpent, Predpent, Mobpent, Colpent, Secpent};
+
+    // The labels for the chart
+    string[] labels4 = {"Data", "Visualisatie", "Prijs", "Self-Service", "Predictive Analytics", "Mobiel", "Collaboration", "Security"};
+
+    // Create a PolarChart object of size 450 x 350 pixels
+    PolarChart c4 = new PolarChart(450, 400);
+
+    // Set center of plot area at (250, 185) with radius 150 pixels
+    c4.setPlotArea(250, 185, 150);
+
+    // Add an area layer to the polar chart
+    c4.addAreaLayer(data4, 0x9999ff);
+
+    // Set the labels to the angular axis as spokes
+    c4.angularAxis().setLabels(labels4);
+
+    // Output the chart
+    WebChartViewer4.Image = c4.makeWebImage(Chart.PNG);
+
+    // Include tool tip for the chart
+    WebChartViewer4.ImageMap = c4.getHTMLImageMap("", "",
+        "title='{label}: score = {value}'");
+
+       Chart.setLicenseCode("DEVP-A1B2-C3D4-E5F6-G7H8-J9K0");
 
 
 
@@ -508,39 +627,6 @@
   
 
 
-       <%-- Toolscores --%>
-       double Datasas = 5;
-       double Datapent = 7;
-       double Datatab = 3;
-
-       double Vissas = 5;
-       double Vispent = 3;
-       double Vistab = 7;
-
-       double Prijssas = 3;
-       double Prijspent = 7;
-       double Prijstab = 5;
-
-       double Selfsas = 5;
-       double Selfpent = 3;
-       double Selftab = 7;
-
-       double Predsas = 7;
-       double Predpent = 1;
-       double Predtab = 3;
-
-       double Mobsas = 5;
-       double Mobpent = 3;
-       double Mobtab = 7;
-
-       double Colsas = 3;
-       double Colpent = 3;
-       double Coltab = 7;
-
-       double Secsas = 5;
-       double Secpent = 7;
-       double Sectab = 3;
-
        <%-- Matrix datatool --%>
        double DataST = Datasas/Datatab;
        double DataTS = Datatab/Datasas;
@@ -736,52 +822,136 @@
 
 
        if(TotaalS > TotaalT && TotaalS > TotaalP && TotaalP > TotaalT){
-       ResToolLabel1.Text = "SAS Visual Analytics";
+       ResToolLink1.Text = "SAS Visual Analytics";
        ResPercLabel1.Text = String.Format("{0:P2}",TotaalS);
-       ResToolLabel2.Text = "Pentaho Business Analytics";
+       ResToolLink1.NavigateUrl = "http://www.sas.com/en_be/software/business-intelligence/visual-analytics.html";
+       ResToolLink2.Text = "Pentaho Business Analytics";
        ResPercLabel2.Text = String.Format("{0:P2}",TotaalP);
-       ResToolLabel3.Text = "Tableau";
+       ResToolLink2.NavigateUrl = "http://www.pentaho.com/product/business-visualization-analytics";
+       ResToolLink3.Text = "Tableau";
        ResPercLabel3.Text = String.Format("{0:P2}",TotaalT);
+       ResToolLink3.NavigateUrl = "http://www.tableau.com/";
+
+       SH1.Visible=true;
+       SH2.Visible=false;
+       SH3.Visible=false;
+       PH1.Visible=false;
+       PH2.Visible=true;
+       PH3.Visible=false;
+       TH1.Visible=false;
+       TH2.Visible=false;  
+       TH3.Visible=true;       
+
        }
        else if(TotaalS > TotaalT && TotaalS > TotaalP && TotaalT > TotaalP){
-       ResToolLabel1.Text = "SAS Visual Analytics";
+       ResToolLink1.Text = "SAS Visual Analytics";
        ResPercLabel1.Text = String.Format("{0:P2}",TotaalS);
-       ResToolLabel2.Text = "Tableau";
+       ResToolLink1.NavigateUrl = "http://www.sas.com/en_be/software/business-intelligence/visual-analytics.html";
+       ResToolLink2.Text = "Tableau";
        ResPercLabel2.Text = String.Format("{0:P2}",TotaalT);
-       ResToolLabel3.Text = "Pentaho Business Analytics";
+       ResToolLink2.NavigateUrl = "http://www.tableau.com/";
+       ResToolLink3.Text = "Pentaho Business Analytics";
        ResPercLabel3.Text = String.Format("{0:P2}",TotaalP);
+       ResToolLink3.NavigateUrl = "http://www.pentaho.com/product/business-visualization-analytics";
+
+       SH1.Visible=true;
+       SH2.Visible=false;
+       SH3.Visible=false;
+       PH1.Visible=false;
+       PH2.Visible=false;
+       PH3.Visible=true;
+       TH1.Visible=false;
+       TH2.Visible=true;  
+       TH3.Visible=false;  
+
        }
        else if(TotaalP > TotaalT && TotaalP > TotaalS && TotaalT > TotaalS){
-       ResToolLabel1.Text = "Pentaho Business Analytics";
+       ResToolLink1.Text = "Pentaho Business Analytics";
        ResPercLabel1.Text = String.Format("{0:P2}",TotaalP);
-       ResToolLabel2.Text = "Tableau";
+       ResToolLink1.NavigateUrl = "http://www.pentaho.com/product/business-visualization-analytics";
+       ResToolLink2.Text = "Tableau";
        ResPercLabel2.Text = String.Format("{0:P2}",TotaalT);
-       ResToolLabel3.Text = "SAS Visual Analytics";
+       ResToolLink2.NavigateUrl = "http://www.tableau.com/";
+       ResToolLink3.Text = "SAS Visual Analytics";
        ResPercLabel3.Text = String.Format("{0:P2}",TotaalS);
+       ResToolLink3.NavigateUrl = "http://www.sas.com/en_be/software/business-intelligence/visual-analytics.html";
+
+       SH1.Visible=false;
+       SH2.Visible=false;
+       SH3.Visible=true;
+       PH1.Visible=true;
+       PH2.Visible=false;
+       PH3.Visible=false;
+       TH1.Visible=false;
+       TH2.Visible=true;  
+       TH3.Visible=false;  
+
        }
        else if(TotaalP > TotaalT && TotaalP > TotaalS && TotaalS > TotaalT){
-       ResToolLabel1.Text = "Pentaho Business Analytics";
+       ResToolLink1.Text = "Pentaho Business Analytics";
        ResPercLabel1.Text = String.Format("{0:P2}",TotaalP);
-       ResToolLabel2.Text = "SAS Visual Analytics";
+       ResToolLink1.NavigateUrl = "http://www.pentaho.com/product/business-visualization-analytics";
+       ResToolLink2.Text = "SAS Visual Analytics";
        ResPercLabel2.Text = String.Format("{0:P2}",TotaalS);
-       ResToolLabel3.Text = "Tableau";
+       ResToolLink2.NavigateUrl = "http://www.sas.com/en_be/software/business-intelligence/visual-analytics.html";
+       ResToolLink3.Text = "Tableau";
        ResPercLabel3.Text = String.Format("{0:P2}",TotaalT);
+       ResToolLink3.NavigateUrl = "http://www.tableau.com/";
+
+       SH1.Visible=false;
+       SH2.Visible=true;
+       SH3.Visible=false;
+       PH1.Visible=true;
+       PH2.Visible=false;
+       PH3.Visible=false;
+       TH1.Visible=false;
+       TH2.Visible=false;  
+       TH3.Visible=true;  
+
        }
        else if(TotaalT > TotaalP && TotaalT > TotaalS && TotaalS > TotaalP){
-       ResToolLabel1.Text = "Tableau";
+       ResToolLink1.Text = "Tableau";
        ResPercLabel1.Text = String.Format("{0:P2}",TotaalT);
-       ResToolLabel2.Text = "SAS Visual Analytics";
+       ResToolLink1.NavigateUrl = "http://www.tableau.com/";
+       ResToolLink2.Text = "SAS Visual Analytics";
        ResPercLabel2.Text = String.Format("{0:P2}",TotaalS);
-       ResToolLabel3.Text = "Pentaho Business Analytics";
+       ResToolLink2.NavigateUrl = "http://www.sas.com/en_be/software/business-intelligence/visual-analytics.html";
+       ResToolLink3.Text = "Pentaho Business Analytics";
        ResPercLabel3.Text = String.Format("{0:P2}",TotaalP);
+       ResToolLink3.NavigateUrl = "http://www.pentaho.com/product/business-visualization-analytics";
+
+       SH1.Visible=false;
+       SH2.Visible=true;
+       SH3.Visible=false;
+       PH1.Visible=false;
+       PH2.Visible=false;
+       PH3.Visible=true;
+       TH1.Visible=true;
+       TH2.Visible=false;  
+       TH3.Visible=false;  
+
        }
        else if(TotaalT > TotaalP && TotaalT > TotaalS && TotaalP > TotaalS){
-       ResToolLabel1.Text = "Tableau";
+       ResToolLink1.Text = "Tableau";
        ResPercLabel1.Text = String.Format("{0:P2}",TotaalT);
-       ResToolLabel2.Text = "Pentaho Business Analytics";
+       ResToolLink1.NavigateUrl = "http://www.tableau.com/";
+       ResToolLink2.Text = "Pentaho Business Analytics";
        ResPercLabel2.Text = String.Format("{0:P2}",TotaalP);
-       ResToolLabel3.Text = "SAS Visual Analytics";
+       ResToolLink2.NavigateUrl = "http://www.pentaho.com/product/business-visualization-analytics";
+       ResToolLink3.Text = "SAS Visual Analytics";
        ResPercLabel3.Text = String.Format("{0:P2}",TotaalS);
+       ResToolLink3.NavigateUrl = "http://www.sas.com/en_be/software/business-intelligence/visual-analytics.html";
+
+       SH1.Visible=false;
+       SH2.Visible=false;
+       SH3.Visible=true;
+       PH1.Visible=false;
+       PH2.Visible=true;
+       PH3.Visible=false;
+       TH1.Visible=true;
+       TH2.Visible=false;  
+       TH3.Visible=false;  
+
        }
 
 
@@ -806,13 +976,13 @@
 
       <h2>RTS Model</h2>
 
-
-                  <table class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:20%; margin-bottom:0px;">
+    <div style="height:100%;">
+                  <table class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:20%; margin-bottom:0px;">
                       <tr>
-                          <td style="text-align:center; font-size:19px;">Data</td>
+                          <td style="text-align:left; font-size:19px;">Data</td>
                       </tr>
                   </table>
-                  <asp:RadioButtonList id=Data runat="server"  RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:80%; margin-bottom:0px;">
+                  <asp:RadioButtonList id=Data runat="server"  RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:80%; margin-bottom:0px;">
                      <asp:ListItem>Onbelangrijk</asp:ListItem>
                      <asp:ListItem>Minder belangrijk</asp:ListItem>
                      <asp:ListItem>Neutraal</asp:ListItem>
@@ -820,12 +990,12 @@
                      <asp:ListItem>Zeer belangrijk</asp:ListItem>
                   </asp:RadioButtonList>
 
-                  <table class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:20%; margin-bottom:0px;">
+                  <table class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:20%; margin-bottom:0px;">
                       <tr>
-                          <td style="text-align:center; font-size:19px;">Visualisation</td>
+                          <td style="text-align:left; font-size:19px;">Visualisation</td>
                       </tr>
                   </table>
-                  <asp:RadioButtonList id=Visualisatie runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:80%; margin-bottom:0px;">
+                  <asp:RadioButtonList id=Visualisatie runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:80%; margin-bottom:0px;">
                      <asp:ListItem>Onbelangrijk</asp:ListItem>
                      <asp:ListItem>Minder belangrijk</asp:ListItem>
                      <asp:ListItem>Neutraal</asp:ListItem>
@@ -833,12 +1003,12 @@
                      <asp:ListItem>Zeer belangrijk</asp:ListItem>
                   </asp:RadioButtonList>
             
-                  <table class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:20%; margin-bottom:0px;">
+                  <table class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:20%; margin-bottom:0px;">
                       <tr>
-                          <td style="text-align:center; font-size:19px;">Price</td>
+                          <td style="text-align:left; font-size:19px;">Price</td>
                       </tr>
                   </table>
-                  <asp:RadioButtonList id=Prijs runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:80%; margin-bottom:0px;">
+                  <asp:RadioButtonList id=Prijs runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:80%; margin-bottom:0px;">
                      <asp:ListItem>Onbelangrijk</asp:ListItem>
                      <asp:ListItem>Minder belangrijk</asp:ListItem>
                      <asp:ListItem>Neutraal</asp:ListItem>
@@ -846,12 +1016,12 @@
                      <asp:ListItem>Zeer belangrijk</asp:ListItem>
                   </asp:RadioButtonList>
 
-                  <table class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:20%; margin-bottom:0px;">
+                  <table class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:20%; margin-bottom:0px;">
                       <tr>
-                          <td style="text-align:center; font-size:19px;">Self-service</td>
+                          <td style="text-align:left; font-size:19px;">Self-service</td>
                       </tr>
                   </table>
-                  <asp:RadioButtonList id=Selfservice runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:80%; margin-bottom:0px;">
+                  <asp:RadioButtonList id=Selfservice runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:80%; margin-bottom:0px;">
                      <asp:ListItem>Onbelangrijk</asp:ListItem>
                      <asp:ListItem>Minder belangrijk</asp:ListItem>
                      <asp:ListItem>Neutraal</asp:ListItem>
@@ -859,12 +1029,12 @@
                      <asp:ListItem>Zeer belangrijk</asp:ListItem>
                   </asp:RadioButtonList>
 
-                  <table class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:20%; margin-bottom:0px;">
+                  <table class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:20%; margin-bottom:0px;">
                       <tr>
-                          <td style="text-align:center; font-size:19px;">Predictive Analytics</td>
+                          <td style="text-align:left; font-size:19px;">Predictive Analytics</td>
                       </tr>
                   </table>
-                  <asp:RadioButtonList id=Predictive runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:80%; margin-bottom:0px;">
+                  <asp:RadioButtonList id=Predictive runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:80%; margin-bottom:0px;">
                      <asp:ListItem>Onbelangrijk</asp:ListItem>
                      <asp:ListItem>Minder belangrijk</asp:ListItem>
                      <asp:ListItem>Neutraal</asp:ListItem>
@@ -872,12 +1042,12 @@
                      <asp:ListItem>Zeer belangrijk</asp:ListItem>
                   </asp:RadioButtonList>
 
-                  <table class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:20%; margin-bottom:0px;">
+                  <table class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:20%; margin-bottom:0px;">
                       <tr>
-                          <td style="text-align:center; font-size:19px;">Mobile</td>
+                          <td style="text-align:left; font-size:19px;">Mobile</td>
                       </tr>
                   </table>
-                  <asp:RadioButtonList id=Mobiel runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:80%; margin-bottom:0px;">
+                  <asp:RadioButtonList id=Mobiel runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:80%; margin-bottom:0px;">
                      <asp:ListItem>Onbelangrijk</asp:ListItem>
                      <asp:ListItem>Minder belangrijk</asp:ListItem>
                      <asp:ListItem>Neutraal</asp:ListItem>
@@ -885,12 +1055,12 @@
                      <asp:ListItem>Zeer belangrijk</asp:ListItem>
                   </asp:RadioButtonList>
 
-                  <table class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:20%; margin-bottom:0px;">
+                  <table class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:20%; margin-bottom:0px;">
                       <tr>
-                          <td style="text-align:center; font-size:19px;">Collaboration</td>
+                          <td style="text-align:left; font-size:19px;">Collaboration</td>
                       </tr>
                   </table>
-                  <asp:RadioButtonList id=Collaboration runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:80%; margin-bottom:0px;">
+                  <asp:RadioButtonList id=Collaboration runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:80%; margin-bottom:0px;">
                      <asp:ListItem>Onbelangrijk</asp:ListItem>
                      <asp:ListItem>Minder belangrijk</asp:ListItem>
                      <asp:ListItem>Neutraal</asp:ListItem>
@@ -898,65 +1068,129 @@
                      <asp:ListItem>Zeer belangrijk</asp:ListItem>
                   </asp:RadioButtonList>
        
-                  <table class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:20%;">
+                  <table class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:20%;">
                       <tr>
-                          <td style="text-align:center; font-size:19px;">Security</td>
+                          <td style="text-align:left; font-size:19px;">Security</td>
                       </tr>
                   </table>
-                  <asp:RadioButtonList id=Security runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:center; float:left; width:80%;">
+                  <asp:RadioButtonList id=Security runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:80%;">
                      <asp:ListItem>Onbelangrijk</asp:ListItem>
                      <asp:ListItem>Minder belangrijk</asp:ListItem>
                      <asp:ListItem>Neutraal</asp:ListItem>
                      <asp:ListItem>Belangrijk</asp:ListItem>
                      <asp:ListItem>Zeer belangrijk</asp:ListItem>
-                  </asp:RadioButtonList>
-      
+                  </asp:RadioButtonList></div>
 
     <div style="text-align:center; margin-top:25px;">
-      <asp:Button class="btn btn-default" id="Submit" Text="Voer uit" OnClick="Submit_Click" runat="server"/>
-    </div>
+      <asp:Button class="btn btn-default" id="Submit" Text="Voer uit" OnClick="Submit_Click" runat="server" style="font-size:19px;"/>
+    </div><p>
 
-<p>
+
+
 
     <asp:Panel id="Resultaat" runat="server" visible="false">
 
-    <div style="text-align:center; margin-top:25px;">
+    <div style="text-align:center; margin-top:25px; margin-left:-60px;">
+        <h3 style="margin-left:60px;">Radarchart over de ingegeven criteria</h3>
         <chart:WebChartViewer id="WebChartViewer1" runat="server"/>
     </div>
-    <div style="text-align:center">
+    <div style="text-align:center; margin-left:-60px;">
     <img src="Images/White.png" style="width:450px;height:10px;margin-top:-32px;" />
     </div>
 
-    <table class="table table-bordered table-hover table-responsive" style="text-align: center; margin-top:10px;">
+
+<!-- Modal SAS-->
+<div class="modal fade pull-right" id="sasModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+  <div class="modal-dialog" style="height:600px; width:500px; margin-top:100px; margin-left:100px;">
+    <div class="modal-content" style="height:450px;">
+      <div class="modal-header" style="background-color:white;">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Radar chart SAS Visual Analytics</h4>
+      </div>
+      <div class="modal-body" style="padding:10px 25px; height:450px; background-color:white;">
+          <chart:WebChartViewer id="WebChartViewer2" runat="server"/>
+          <img src="Images/White.png" style="width:450px;height:15px;margin-top:-40px;" />
+      </div>
+      <div class="modal-footer" style="background-color:white;">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal TAB-->
+<div class="modal fade" id="tabModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" style="height:600px; width:500px; margin-top:100px; margin-left:100px;">
+    <div class="modal-content" style="height:450px;">
+      <div class="modal-header" style="background-color:white;">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Radar chart Tableau</h4>
+      </div>
+      <div class="modal-body" style="padding:10px 25px; height:450px; background-color:white;">
+          <chart:WebChartViewer id="WebChartViewer3" runat="server"/>
+          <img src="Images/White.png" style="width:450px;height:15px;margin-top:-40px;" />
+      </div>
+      <div class="modal-footer" style="background-color:white;">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal PENT-->
+<div class="modal fade" id="pentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" style="height:600px; width:500px; margin-top:100px; margin-left:100px;">
+    <div class="modal-content" style="height:450px;">
+      <div class="modal-header" style="background-color:white;">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Radar chart Pentaho Business Analytics</h4>
+      </div>
+      <div class="modal-body" style="padding:10px 25px; height:450px; background-color:white;">
+          <chart:WebChartViewer id="WebChartViewer4" runat="server"/>
+          <img src="Images/White.png" style="width:450px;height:15px;margin-top:-40px;" />
+      </div>
+      <div class="modal-footer" style="background-color:white;">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <table class="table table-bordered table-hover table-responsive" style="text-align: center; border-color:lightgray">
         <thead>
-            <th></th>
-            <th style="text-align: center">Tool</th>
-            <th style="text-align: center">Resultaat</th>
+            <th style="border-color:lightgray; font-size:19px;"></th>
+            <th style="text-align: center;border-color:lightgray; font-size:19px;">Tool</th>
+            <th style="text-align: center;border-color:lightgray; font-size:19px;">Resultaat</th>
+            <th style="text-align: center;border-color:lightgray; font-size:19px;">Radar charts</th>
         </thead>
         <tr>
-            <th style="text-align: center">1ste</th>
-            <td><asp:Label id="ResToolLabel1"  runat="server"/></td>
-            <td><asp:Label id="ResPercLabel1"  runat="server"/></td>
+            <th style="text-align: center;border-color:lightgray; font-size:19px;">1ste</th>
+            <td style="border-color:lightgray; font-size:19px;"><asp:HyperLink Text="Tool" Id="ResToolLink1" Runat="Server" target="_blank" style="text-decoration:none;"/></td>
+            <td style="border-color:lightgray; font-size:19px;"><asp:Label id="ResPercLabel1"  runat="server"/></td>
+            <td style="border-color:lightgray; font-size:19px;"><asp:HyperLink Text="Pentaho Radar" id="PH1" Runat="Server" data-toggle="modal" data-target="#pentModal" style="cursor:pointer; text-decoration:none;" visible="false"/><asp:HyperLink Text="Tableau Radar" id="TH1" Runat="Server" data-toggle="modal" data-target="#tabModal" style="cursor:pointer; text-decoration:none;" visible="false"/><asp:HyperLink Text="SAS Radar" id="SH1" Runat="Server" data-toggle="modal" data-target="#sasModal" style="cursor:pointer; text-decoration:none;" visible="false"/></td>
         </tr>
         <tr>
-            <th style="text-align: center">2de</th>
-            <td><asp:Label id="ResToolLabel2"  runat="server"/></td>
-            <td><asp:Label id="ResPercLabel2"  runat="server"/></td>
+            <th style="text-align: center;border-color:lightgray; font-size:19px;">2de</th>
+            <td style="border-color:lightgray; font-size:19px;"><asp:HyperLink Text="Tool" Id="ResToolLink2" Runat="Server" target="_blank" style="text-decoration:none;"/></td>
+            <td style="border-color:lightgray; font-size:19px;"><asp:Label id="ResPercLabel2"  runat="server"/></td>
+            <td style="border-color:lightgray; font-size:19px;"><asp:HyperLink Text="Pentaho Radar" id="PH2" Runat="Server" data-toggle="modal" data-target="#pentModal" style="cursor:pointer; text-decoration:none;" visible="false"/><asp:HyperLink Text="Tableau Radar" id="TH2" Runat="Server" data-toggle="modal" data-target="#tabModal" style="cursor:pointer; text-decoration:none;" visible="false"/><asp:HyperLink Text="SAS Radar" id="SH2" Runat="Server" data-toggle="modal" data-target="#sasModal" style="cursor:pointer; text-decoration:none;" visible="false"/></td>
         </tr>
         <tr>
-            <th style="text-align: center">3de</th>
-            <td><asp:Label id="ResToolLabel3"  runat="server"/></td>
-            <td><asp:Label id="ResPercLabel3"  runat="server"/></td>
+            <th style="text-align: center;border-color:lightgray; font-size:19px;">3de</th>
+            <td style="border-color:lightgray; font-size:19px;"><asp:HyperLink Text="Tool" Id="ResToolLink3" Runat="Server" target="_blank" style="text-decoration:none;"/></td>
+            <td style="border-color:lightgray; font-size:19px;"><asp:Label id="ResPercLabel3"  runat="server"/></td>
+            <td style="border-color:lightgray; font-size:19px;"><asp:HyperLink Text="Pentaho Radar" id="PH3" Runat="Server" data-toggle="modal" data-target="#pentModal" style="cursor:pointer; text-decoration:none;" visible="false"/><asp:HyperLink Text="Tableau Radar" id="TH3" Runat="Server" data-toggle="modal" data-target="#tabModal" style="cursor:pointer; text-decoration:none;" visible="false"/><asp:HyperLink Text="SAS Radar" id="SH3" Runat="Server" data-toggle="modal" data-target="#sasModal" style="cursor:pointer; text-decoration:none;" visible="false"/></td>
         </tr>
     </table>
 
-    <div style="margin-top: 25px; text-align:center;">
-    <h4>De meest overeenkomende tool is <asp:HyperLink Text="Result" Id="ResultLink" Runat="Server" target="_blank" />. Klik op de link om naar de website van de tool te gaan.</h4>
+    <div style="margin-top: 50px; text-align:center;">
+    <h4>We hebben uw behoeften (door middel van de bevraging van de criteria) vergeleken met de scores van de tools. De meest overeenkomende tool is <asp:HyperLink Text="Result" Id="ResultLink" Runat="Server" target="_blank" />. Klik op de link om naar de website van de tool te gaan.</h4>
     </div>
 </asp:Panel>
 
     <asp:Panel id="Invullen" runat="server" visible="false">
-        <h4 style="color:red">Gelieve eerst alle keuzes aan te duiden.</h4>
+        <h4 style="color:red; margin-top:25px;">Gelieve eerst alle keuzes aan te duiden.</h4>
         </asp:Panel>
 
 </asp:Content>
