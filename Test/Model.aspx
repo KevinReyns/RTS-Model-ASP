@@ -1105,7 +1105,7 @@
     <asp:Panel id="Resultaat" runat="server" visible="false">
 
     <div style="text-align:center; margin-top:25px; margin-left:-60px;">
-        <h3 style="margin-left:60px;">Radar chart over de ingegeven criteria</h3>
+        <h3 style="margin-left:60px;">Radar chart van bovenstaande input</h3>
         <chart:WebChartViewer id="WebChartViewer1" runat="server"/>
     </div>
     <div style="text-align:center; margin-left:-60px;">
@@ -1199,7 +1199,7 @@
     </table>
 
     <div style="margin-top: 50px; text-align:center;">
-    <h4>We hebben het belang dat u aan ieder criteria hecht gecombineerd met de scores van iedere tool. Op basis hiervan blijkt de meest geschikte tool <asp:HyperLink Text="Result" Id="ResultLink" Runat="Server" target="_blank" /> te zijn. Klik op de link voor meer informatie.</h4>
+    <h4>We hebben het belang dat u aan ieder criteria hecht gecombineerd met de scores van iedere tool. </br>Op basis hiervan blijkt de meest geschikte tool <asp:HyperLink Text="Result" Id="ResultLink" Runat="Server" target="_blank" /> te zijn. Klik op de link voor meer informatie.</h4>
     </div>
 </asp:Panel>
 
