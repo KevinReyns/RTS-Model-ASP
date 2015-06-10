@@ -1101,7 +1101,7 @@
 
 <!-- Modal SAS-->
 <div class="modal fade pull-right" id="sasModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
-  <div class="modal-dialog" style="height:600px; width:500px; margin-top:100px; margin-left:100px;">
+  <div class="modal-dialog" style="height:600px; width:500px; margin-top:100px; margin-left:50px;">
     <div class="modal-content" style="height:450px;">
       <div class="modal-header" style="background-color:white;">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -1120,7 +1120,7 @@
 
 <!-- Modal TAB-->
 <div class="modal fade" id="tabModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" style="height:600px; width:500px; margin-top:100px; margin-left:100px;">
+  <div class="modal-dialog" style="height:600px; width:500px; margin-top:100px; margin-left:50px;">
     <div class="modal-content" style="height:450px;">
       <div class="modal-header" style="background-color:white;">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -1139,7 +1139,7 @@
 
 <!-- Modal PENT-->
 <div class="modal fade" id="pentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" style="height:600px; width:500px; margin-top:100px; margin-left:100px;">
+  <div class="modal-dialog" style="height:600px; width:500px; margin-top:100px; margin-left:50px;">
     <div class="modal-content" style="height:450px;">
       <div class="modal-header" style="background-color:white;">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
