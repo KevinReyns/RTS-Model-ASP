@@ -1101,17 +1101,17 @@
 
 <!-- Modal SAS-->
 <div class="modal fade pull-right" id="sasModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
-  <div class="modal-dialog" style="height:600px; width:500px; margin-top:100px; margin-left:50px;">
-    <div class="modal-content" style="height:450px;">
+  <div class="modal-dialog" style="height:560px; width:500px; margin-top:100px; margin-left:50px;">
+    <div class="modal-content" style="height:410px;">
       <div class="modal-header" style="background-color:white;">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h4 class="modal-title" id="myModalLabel">Radar chart SAS Visual Analytics</h4>
       </div>
-      <div class="modal-body" style="padding:10px 25px; height:450px; background-color:white;">
+      <div class="modal-body" style="padding:10px 25px; height:410px; background-color:white;">
           <chart:WebChartViewer id="WebChartViewer2" runat="server"/>
           <img src="Images/White.png" style="width:450px;height:15px;margin-top:-40px;" />
       </div>
-      <div class="modal-footer" style="background-color:white;">
+      <div class="modal-footer" style="background-color:white; padding:10px;">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
@@ -1120,17 +1120,17 @@
 
 <!-- Modal TAB-->
 <div class="modal fade" id="tabModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" style="height:600px; width:500px; margin-top:100px; margin-left:50px;">
-    <div class="modal-content" style="height:450px;">
+  <div class="modal-dialog" style="height:560px; width:500px; margin-top:100px; margin-left:50px;">
+    <div class="modal-content" style="height:410px;">
       <div class="modal-header" style="background-color:white;">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h4 class="modal-title" id="myModalLabel">Radar chart Tableau</h4>
       </div>
-      <div class="modal-body" style="padding:10px 25px; height:450px; background-color:white;">
+      <div class="modal-body" style="padding:10px 25px; height:410px; background-color:white;">
           <chart:WebChartViewer id="WebChartViewer3" runat="server"/>
           <img src="Images/White.png" style="width:450px;height:15px;margin-top:-40px;" />
       </div>
-      <div class="modal-footer" style="background-color:white;">
+      <div class="modal-footer" style="background-color:white; padding:10px;">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
@@ -1139,17 +1139,17 @@
 
 <!-- Modal PENT-->
 <div class="modal fade" id="pentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" style="height:600px; width:500px; margin-top:100px; margin-left:50px;">
-    <div class="modal-content" style="height:450px;">
+  <div class="modal-dialog" style="height:560px; width:500px; margin-top:100px; margin-left:50px;">
+    <div class="modal-content" style="height:410px;">
       <div class="modal-header" style="background-color:white;">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h4 class="modal-title" id="myModalLabel">Radar chart Pentaho Business Analytics</h4>
       </div>
-      <div class="modal-body" style="padding:10px 25px; height:450px; background-color:white;">
+      <div class="modal-body" style="padding:10px 25px; height:410px; background-color:white;">
           <chart:WebChartViewer id="WebChartViewer4" runat="server"/>
           <img src="Images/White.png" style="width:450px;height:15px;margin-top:-40px;" />
       </div>
-      <div class="modal-footer" style="background-color:white;">
+      <div class="modal-footer" style="background-color:white; padding:10px;">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
