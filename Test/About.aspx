@@ -9,17 +9,17 @@
         alsook dat we ze kunnen toepassen op een gesteld probleem dat gerelateerd is aan onze opleiding en ons afstudeertraject.
     </p>
     <p>
-        Dat er enorm veel data beschikbaar is, en er zeer veel software vendors producten aanbieden om deze data te pijnigen, staat buiten kijf. Er zijn zo veel tools, met allemaal eenzelfde doel, 
-        die onderling veel gelijkenissen hebben, maar iedere tool toch ook zijn eigen unieke kenmerken. Iedere software vendor zal immers vertellen dat zijn oplossing de beste is en de meeste voordelen biedt. 
-        De vraag luidt echter hoe er nu een geschikte oplossing gekozen kan worden, die voldoet een de verwachtingen van de business.
+        Dat er enorm veel data beschikbaar is, en er zeer veel <em>software vendors</em> producten aanbieden om deze data te pijnigen, staat buiten kijf. Er zijn zo veel <em>tools</em>, met allemaal eenzelfde doel, 
+        die onderling veel gelijkenissen hebben, maar iedere <em>tool</em> toch ook zijn eigen unieke kenmerken. Iedere <em>software vendor</em> zal immers vertellen dat zijn oplossing de beste is en de meeste voordelen biedt. 
+        De vraag luidt echter hoe er nu een geschikte oplossing gekozen kan worden, die voldoet een de verwachtingen van de <em>business</em>.
     </p>
     <p>
-        Wij hebben dan ook besloten om een model te maken, dat een ideaal huwelijk probeert te voorzien tussen de business behoeften van een organisatie en de objectieve scores van de tools,
-        dit op basis van een aantal voorafgedefinieerde criteria.
+        Wij hebben dan ook besloten om een model te maken, dat een ideaal huwelijk probeert te voorzien tussen de <em>business</em> behoeften van een organisatie en de objectieve scores van de <em>tools</em>,
+        dit op basis van een aantal vooraf gedefinieerde criteria.
     </p>
 
 <!-- Button trigger modal -->
-    <div style="text-align:center; ">
+    <div style="text-align:center; display:none;">
 <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" >
   Toon eindwerk
 </button>
@@ -27,14 +27,14 @@
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" style="height:900px; width:700px;"">
-    <div class="modal-content" style="height:750px;">
+  <div class="modal-dialog" style="width:700px;">
+    <div class="modal-content" >
       <div class="modal-header" style="background-color:white;">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h4 class="modal-title" id="myModalLabel">Eindwerk</h4>
       </div>
-      <div class="modal-body" style="padding:10px 25px; height:700px; background-color:white;">
-          <object type="application/pdf" data="Eindwerk.pdf" width="650" height="675">this is not working as expected</object>
+      <div class="modal-body" style="padding:10px 25px;  background-color:white;">
+          <object type="application/pdf" data="Eindwerk.pdf" width="650" style="height:675px; max-height: 100%;">this is not working as expected</object>
       </div>
       <div class="modal-footer" style="background-color:white;">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

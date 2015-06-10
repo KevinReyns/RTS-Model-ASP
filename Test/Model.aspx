@@ -281,7 +281,7 @@
     double[] data1 = {DataNum, VisNum, PrijsNum, SelfNum, PredNum, MobNum, CollaNum, SecNum};
 
     // The labels for the chart
-    string[] labels1 = {"Data", "Visualisatie", "Prijs", "Self-Service", "Predictive Analytics", "Mobiel", "Collaboration", "Security"};
+    string[] labels1 = {"Data", "Visualisatie", "Prijs", "Self-service", "Predictive Analytics", "Mobiel", "Collaboration", "Security"};
 
     // Create a PolarChart object of size 450 x 350 pixels
     PolarChart c1 = new PolarChart(450, 400);
@@ -290,10 +290,13 @@
     c1.setPlotArea(250, 185, 150);
 
     // Add an area layer to the polar chart
-    c1.addAreaLayer(data1, 0x9999ff);
+    c1.addAreaLayer(data1, 0x2c3e50);
 
     // Set the labels to the angular axis as spokes
     c1.angularAxis().setLabels(labels1);
+       
+    // Set radial axis from 0 - 10 with a tick every 2 units
+    c1.radialAxis().setLinearScale(0, 10, 2);
 
     // Output the chart
     WebChartViewer1.Image = c1.makeWebImage(Chart.PNG);
@@ -301,6 +304,8 @@
     // Include tool tip for the chart
     WebChartViewer1.ImageMap = c1.getHTMLImageMap("", "",
         "title='{label}: score = {value}'");
+
+    
 
        Chart.setLicenseCode("DEVP-A1B2-C3D4-E5F6-G7H8-J9K0");
 
@@ -310,7 +315,7 @@
     double[] data2 = {Datasas, Vissas, Prijssas, Selfsas, Predsas, Mobsas, Colsas, Secsas};
 
     // The labels for the chart
-    string[] labels2 = {"Data", "Visualisatie", "Prijs", "Self-Service", "Predictive Analytics", "Mobiel", "Collaboration", "Security"};
+    string[] labels2 = {"Data", "Visualisatie", "Prijs", "Self-service", "Predictive Analytics", "Mobiel", "Collaboration", "Security"};
 
     // Create a PolarChart object of size 450 x 350 pixels
     PolarChart c2 = new PolarChart(450, 400);
@@ -319,10 +324,13 @@
     c2.setPlotArea(250, 185, 150);
 
     // Add an area layer to the polar chart
-    c2.addAreaLayer(data2, 0x9999ff);
+    c2.addAreaLayer(data2, 0x2c3e50);
 
     // Set the labels to the angular axis as spokes
     c2.angularAxis().setLabels(labels2);
+
+    // Set radial axis from 0 - 10 with a tick every 2 units
+    c2.radialAxis().setLinearScale(0, 10, 2);
 
     // Output the chart
     WebChartViewer2.Image = c2.makeWebImage(Chart.PNG);
@@ -339,7 +347,7 @@
     double[] data3 = {Datatab, Vistab, Prijstab, Selftab, Predtab, Mobtab, Coltab, Sectab};
 
     // The labels for the chart
-    string[] labels3 = {"Data", "Visualisatie", "Prijs", "Self-Service", "Predictive Analytics", "Mobiel", "Collaboration", "Security"};
+    string[] labels3 = {"Data", "Visualisatie", "Prijs", "Self-service", "Predictive Analytics", "Mobiel", "Collaboration", "Security"};
 
     // Create a PolarChart object of size 450 x 350 pixels
     PolarChart c3 = new PolarChart(450, 400);
@@ -348,10 +356,13 @@
     c3.setPlotArea(250, 185, 150);
 
     // Add an area layer to the polar chart
-    c3.addAreaLayer(data3, 0x9999ff);
+    c3.addAreaLayer(data3, 0x2c3e50);
 
     // Set the labels to the angular axis as spokes
     c3.angularAxis().setLabels(labels3);
+
+    // Set radial axis from 0 - 10 with a tick every 2 units
+    c3.radialAxis().setLinearScale(0, 10, 2);
 
     // Output the chart
     WebChartViewer3.Image = c3.makeWebImage(Chart.PNG);
@@ -368,7 +379,7 @@
     double[] data4 = {Datapent, Vispent, Prijspent, Selfpent, Predpent, Mobpent, Colpent, Secpent};
 
     // The labels for the chart
-    string[] labels4 = {"Data", "Visualisatie", "Prijs", "Self-Service", "Predictive Analytics", "Mobiel", "Collaboration", "Security"};
+    string[] labels4 = {"Data", "Visualisatie", "Prijs", "Self-service", "Predictive Analytics", "Mobiel", "Collaboration", "Security"};
 
     // Create a PolarChart object of size 450 x 350 pixels
     PolarChart c4 = new PolarChart(450, 400);
@@ -377,10 +388,13 @@
     c4.setPlotArea(250, 185, 150);
 
     // Add an area layer to the polar chart
-    c4.addAreaLayer(data4, 0x9999ff);
+    c4.addAreaLayer(data4, 0x2c3e50);
 
     // Set the labels to the angular axis as spokes
     c4.angularAxis().setLabels(labels4);
+
+    // Set radial axis from 0 - 10 with a tick every 2 units
+    c4.radialAxis().setLinearScale(0, 10, 2);
 
     // Output the chart
     WebChartViewer4.Image = c4.makeWebImage(Chart.PNG);
@@ -974,7 +988,7 @@
    </script>
 
 
-      <h2>RTS Model</h2>
+      <h2>RTS-model</h2>
 
     <div style="height:100%;">
                   <table class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:20%; margin-bottom:0px;">
@@ -1091,7 +1105,7 @@
     <asp:Panel id="Resultaat" runat="server" visible="false">
 
     <div style="text-align:center; margin-top:25px; margin-left:-60px;">
-        <h3 style="margin-left:60px;">Radarchart over de ingegeven criteria</h3>
+        <h3 style="margin-left:60px;">Radar chart over de ingegeven criteria</h3>
         <chart:WebChartViewer id="WebChartViewer1" runat="server"/>
     </div>
     <div style="text-align:center; margin-left:-60px;">
@@ -1159,33 +1173,33 @@
 
     <table class="table table-bordered table-hover table-responsive" style="text-align: center; border-color:lightgray">
         <thead>
-            <th style="border-color:lightgray; font-size:19px;"></th>
+            <th style="text-align: center; border-color:lightgray; font-size:19px;">Top 3</th>
             <th style="text-align: center;border-color:lightgray; font-size:19px;">Tool</th>
             <th style="text-align: center;border-color:lightgray; font-size:19px;">Resultaat</th>
             <th style="text-align: center;border-color:lightgray; font-size:19px;">Radar charts</th>
         </thead>
         <tr>
-            <th style="text-align: center;border-color:lightgray; font-size:19px;">1ste</th>
+            <th style="text-align: center;border-color:lightgray; font-size:19px;">1</th>
             <td style="border-color:lightgray; font-size:19px;"><asp:HyperLink Text="Tool" Id="ResToolLink1" Runat="Server" target="_blank" style="text-decoration:none;"/></td>
             <td style="border-color:lightgray; font-size:19px;"><asp:Label id="ResPercLabel1"  runat="server"/></td>
-            <td style="border-color:lightgray; font-size:19px;"><asp:HyperLink Text="Pentaho Radar" id="PH1" Runat="Server" data-toggle="modal" data-target="#pentModal" style="cursor:pointer; text-decoration:none;" visible="false"/><asp:HyperLink Text="Tableau Radar" id="TH1" Runat="Server" data-toggle="modal" data-target="#tabModal" style="cursor:pointer; text-decoration:none;" visible="false"/><asp:HyperLink Text="SAS Radar" id="SH1" Runat="Server" data-toggle="modal" data-target="#sasModal" style="cursor:pointer; text-decoration:none;" visible="false"/></td>
+            <td style="border-color:lightgray; font-size:19px;"><asp:HyperLink Text="Pentaho BA Radar" id="PH1" Runat="Server" data-toggle="modal" data-target="#pentModal" style="cursor:pointer; text-decoration:none;" visible="false"/><asp:HyperLink Text="Tableau Radar" id="TH1" Runat="Server" data-toggle="modal" data-target="#tabModal" style="cursor:pointer; text-decoration:none;" visible="false"/><asp:HyperLink Text="SAS VA Radar" id="SH1" Runat="Server" data-toggle="modal" data-target="#sasModal" style="cursor:pointer; text-decoration:none;" visible="false"/></td>
         </tr>
         <tr>
-            <th style="text-align: center;border-color:lightgray; font-size:19px;">2de</th>
+            <th style="text-align: center;border-color:lightgray; font-size:19px;">2</th>
             <td style="border-color:lightgray; font-size:19px;"><asp:HyperLink Text="Tool" Id="ResToolLink2" Runat="Server" target="_blank" style="text-decoration:none;"/></td>
             <td style="border-color:lightgray; font-size:19px;"><asp:Label id="ResPercLabel2"  runat="server"/></td>
-            <td style="border-color:lightgray; font-size:19px;"><asp:HyperLink Text="Pentaho Radar" id="PH2" Runat="Server" data-toggle="modal" data-target="#pentModal" style="cursor:pointer; text-decoration:none;" visible="false"/><asp:HyperLink Text="Tableau Radar" id="TH2" Runat="Server" data-toggle="modal" data-target="#tabModal" style="cursor:pointer; text-decoration:none;" visible="false"/><asp:HyperLink Text="SAS Radar" id="SH2" Runat="Server" data-toggle="modal" data-target="#sasModal" style="cursor:pointer; text-decoration:none;" visible="false"/></td>
+            <td style="border-color:lightgray; font-size:19px;"><asp:HyperLink Text="Pentaho BA Radar" id="PH2" Runat="Server" data-toggle="modal" data-target="#pentModal" style="cursor:pointer; text-decoration:none;" visible="false"/><asp:HyperLink Text="Tableau Radar" id="TH2" Runat="Server" data-toggle="modal" data-target="#tabModal" style="cursor:pointer; text-decoration:none;" visible="false"/><asp:HyperLink Text="SAS VA Radar" id="SH2" Runat="Server" data-toggle="modal" data-target="#sasModal" style="cursor:pointer; text-decoration:none;" visible="false"/></td>
         </tr>
         <tr>
-            <th style="text-align: center;border-color:lightgray; font-size:19px;">3de</th>
+            <th style="text-align: center;border-color:lightgray; font-size:19px;">3</th>
             <td style="border-color:lightgray; font-size:19px;"><asp:HyperLink Text="Tool" Id="ResToolLink3" Runat="Server" target="_blank" style="text-decoration:none;"/></td>
             <td style="border-color:lightgray; font-size:19px;"><asp:Label id="ResPercLabel3"  runat="server"/></td>
-            <td style="border-color:lightgray; font-size:19px;"><asp:HyperLink Text="Pentaho Radar" id="PH3" Runat="Server" data-toggle="modal" data-target="#pentModal" style="cursor:pointer; text-decoration:none;" visible="false"/><asp:HyperLink Text="Tableau Radar" id="TH3" Runat="Server" data-toggle="modal" data-target="#tabModal" style="cursor:pointer; text-decoration:none;" visible="false"/><asp:HyperLink Text="SAS Radar" id="SH3" Runat="Server" data-toggle="modal" data-target="#sasModal" style="cursor:pointer; text-decoration:none;" visible="false"/></td>
+            <td style="border-color:lightgray; font-size:19px;"><asp:HyperLink Text="Pentaho BA Radar" id="PH3" Runat="Server" data-toggle="modal" data-target="#pentModal" style="cursor:pointer; text-decoration:none;" visible="false"/><asp:HyperLink Text="Tableau Radar" id="TH3" Runat="Server" data-toggle="modal" data-target="#tabModal" style="cursor:pointer; text-decoration:none;" visible="false"/><asp:HyperLink Text="SAS VA Radar" id="SH3" Runat="Server" data-toggle="modal" data-target="#sasModal" style="cursor:pointer; text-decoration:none;" visible="false"/></td>
         </tr>
     </table>
 
     <div style="margin-top: 50px; text-align:center;">
-    <h4>We hebben uw behoeften (door middel van de bevraging van de criteria) vergeleken met de scores van de tools. De meest overeenkomende tool is <asp:HyperLink Text="Result" Id="ResultLink" Runat="Server" target="_blank" />. Klik op de link om naar de website van de tool te gaan.</h4>
+    <h4>We hebben het belang dat u aan ieder criteria hecht gecombineerd met de scores van iedere tool. Op basis hiervan blijkt de meest geschikte tool <asp:HyperLink Text="Result" Id="ResultLink" Runat="Server" target="_blank" /> te zijn. Klik op de link voor meer informatie.</h4>
     </div>
 </asp:Panel>
 
