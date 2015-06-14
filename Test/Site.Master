@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - Het RTS-model</title>
+    <title><%: Page.Title %> - The RTS-model</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -52,8 +52,8 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/Model">Het model</a></li>
-                        <li><a runat="server" href="~/About">Over ons</a></li>
+                        <li><a runat="server" href="~/Model">The model</a></li>
+                        <li><a runat="server" href="~/About">About Us</a></li>
                         
                     </ul>
                     

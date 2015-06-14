@@ -281,7 +281,7 @@
     double[] data1 = {DataNum, VisNum, PrijsNum, SelfNum, PredNum, MobNum, CollaNum, SecNum};
 
     // The labels for the chart
-    string[] labels1 = {"Data", "Visualisatie", "Prijs", "Self-service", "Predictive Analytics", "Mobiel", "Collaboration", "Security"};
+    string[] labels1 = {"Data", "Visualisation", "Price", "Self-service", "Predictive Analytics", "Mobile", "Collaboration", "Security"};
 
     // Create a PolarChart object of size 450 x 350 pixels
     PolarChart c1 = new PolarChart(450, 400);
@@ -315,7 +315,7 @@
     double[] data2 = {Datasas, Vissas, Prijssas, Selfsas, Predsas, Mobsas, Colsas, Secsas};
 
     // The labels for the chart
-    string[] labels2 = {"Data", "Visualisatie", "Prijs", "Self-service", "Predictive Analytics", "Mobiel", "Collaboration", "Security"};
+    string[] labels2 = {"Data", "Visualisation", "Price", "Self-service", "Predictive Analytics", "Mobile", "Collaboration", "Security"};
 
     // Create a PolarChart object of size 450 x 350 pixels
     PolarChart c2 = new PolarChart(450, 400);
@@ -347,7 +347,7 @@
     double[] data3 = {Datatab, Vistab, Prijstab, Selftab, Predtab, Mobtab, Coltab, Sectab};
 
     // The labels for the chart
-    string[] labels3 = {"Data", "Visualisatie", "Prijs", "Self-service", "Predictive Analytics", "Mobiel", "Collaboration", "Security"};
+    string[] labels3 = {"Data", "Visualisation", "Price", "Self-service", "Predictive Analytics", "Mobile", "Collaboration", "Security"};
 
     // Create a PolarChart object of size 450 x 350 pixels
     PolarChart c3 = new PolarChart(450, 400);
@@ -379,7 +379,7 @@
     double[] data4 = {Datapent, Vispent, Prijspent, Selfpent, Predpent, Mobpent, Colpent, Secpent};
 
     // The labels for the chart
-    string[] labels4 = {"Data", "Visualisatie", "Prijs", "Self-service", "Predictive Analytics", "Mobiel", "Collaboration", "Security"};
+    string[] labels4 = {"Data", "Visualisation", "Price", "Self-service", "Predictive Analytics", "Mobile", "Collaboration", "Security"};
 
     // Create a PolarChart object of size 450 x 350 pixels
     PolarChart c4 = new PolarChart(450, 400);
@@ -997,11 +997,11 @@
                       </tr>
                   </table>
                   <asp:RadioButtonList id=Data runat="server"  RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:80%; margin-bottom:0px;">
-                     <asp:ListItem>Onbelangrijk</asp:ListItem>
-                     <asp:ListItem>Minder belangrijk</asp:ListItem>
-                     <asp:ListItem>Neutraal</asp:ListItem>
-                     <asp:ListItem>Belangrijk</asp:ListItem>
-                     <asp:ListItem>Zeer belangrijk</asp:ListItem>
+                     <asp:ListItem>Not important</asp:ListItem>
+                     <asp:ListItem>Less important</asp:ListItem>
+                     <asp:ListItem>Neutral</asp:ListItem>
+                     <asp:ListItem>Important</asp:ListItem>
+                     <asp:ListItem>Very important</asp:ListItem>
                   </asp:RadioButtonList>
 
                   <table class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:20%; margin-bottom:0px;">
@@ -1010,11 +1010,11 @@
                       </tr>
                   </table>
                   <asp:RadioButtonList id=Visualisatie runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:80%; margin-bottom:0px;">
-                     <asp:ListItem>Onbelangrijk</asp:ListItem>
-                     <asp:ListItem>Minder belangrijk</asp:ListItem>
-                     <asp:ListItem>Neutraal</asp:ListItem>
-                     <asp:ListItem>Belangrijk</asp:ListItem>
-                     <asp:ListItem>Zeer belangrijk</asp:ListItem>
+                     <asp:ListItem>Not important</asp:ListItem>
+                     <asp:ListItem>Less important</asp:ListItem>
+                     <asp:ListItem>Neutral</asp:ListItem>
+                     <asp:ListItem>Important</asp:ListItem>
+                     <asp:ListItem>Very important</asp:ListItem>
                   </asp:RadioButtonList>
             
                   <table class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:20%; margin-bottom:0px;">
@@ -1023,11 +1023,11 @@
                       </tr>
                   </table>
                   <asp:RadioButtonList id=Prijs runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:80%; margin-bottom:0px;">
-                     <asp:ListItem>Onbelangrijk</asp:ListItem>
-                     <asp:ListItem>Minder belangrijk</asp:ListItem>
-                     <asp:ListItem>Neutraal</asp:ListItem>
-                     <asp:ListItem>Belangrijk</asp:ListItem>
-                     <asp:ListItem>Zeer belangrijk</asp:ListItem>
+                     <asp:ListItem>Not important</asp:ListItem>
+                     <asp:ListItem>Less important</asp:ListItem>
+                     <asp:ListItem>Neutral</asp:ListItem>
+                     <asp:ListItem>Important</asp:ListItem>
+                     <asp:ListItem>Very important</asp:ListItem>
                   </asp:RadioButtonList>
 
                   <table class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:20%; margin-bottom:0px;">
@@ -1036,11 +1036,11 @@
                       </tr>
                   </table>
                   <asp:RadioButtonList id=Selfservice runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:80%; margin-bottom:0px;">
-                     <asp:ListItem>Onbelangrijk</asp:ListItem>
-                     <asp:ListItem>Minder belangrijk</asp:ListItem>
-                     <asp:ListItem>Neutraal</asp:ListItem>
-                     <asp:ListItem>Belangrijk</asp:ListItem>
-                     <asp:ListItem>Zeer belangrijk</asp:ListItem>
+                     <asp:ListItem>Not important</asp:ListItem>
+                     <asp:ListItem>Less important</asp:ListItem>
+                     <asp:ListItem>Neutral</asp:ListItem>
+                     <asp:ListItem>Important</asp:ListItem>
+                     <asp:ListItem>Very important</asp:ListItem>
                   </asp:RadioButtonList>
 
                   <table class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:20%; margin-bottom:0px;">
@@ -1049,11 +1049,11 @@
                       </tr>
                   </table>
                   <asp:RadioButtonList id=Predictive runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:80%; margin-bottom:0px;">
-                     <asp:ListItem>Onbelangrijk</asp:ListItem>
-                     <asp:ListItem>Minder belangrijk</asp:ListItem>
-                     <asp:ListItem>Neutraal</asp:ListItem>
-                     <asp:ListItem>Belangrijk</asp:ListItem>
-                     <asp:ListItem>Zeer belangrijk</asp:ListItem>
+                     <asp:ListItem>Not important</asp:ListItem>
+                     <asp:ListItem>Less important</asp:ListItem>
+                     <asp:ListItem>Neutral</asp:ListItem>
+                     <asp:ListItem>Important</asp:ListItem>
+                     <asp:ListItem>Very important</asp:ListItem>
                   </asp:RadioButtonList>
 
                   <table class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:20%; margin-bottom:0px;">
@@ -1062,11 +1062,11 @@
                       </tr>
                   </table>
                   <asp:RadioButtonList id=Mobiel runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:80%; margin-bottom:0px;">
-                     <asp:ListItem>Onbelangrijk</asp:ListItem>
-                     <asp:ListItem>Minder belangrijk</asp:ListItem>
-                     <asp:ListItem>Neutraal</asp:ListItem>
-                     <asp:ListItem>Belangrijk</asp:ListItem>
-                     <asp:ListItem>Zeer belangrijk</asp:ListItem>
+                     <asp:ListItem>Not important</asp:ListItem>
+                     <asp:ListItem>Less important</asp:ListItem>
+                     <asp:ListItem>Neutral</asp:ListItem>
+                     <asp:ListItem>Important</asp:ListItem>
+                     <asp:ListItem>Very important</asp:ListItem>
                   </asp:RadioButtonList>
 
                   <table class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:20%; margin-bottom:0px;">
@@ -1075,11 +1075,11 @@
                       </tr>
                   </table>
                   <asp:RadioButtonList id=Collaboration runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:80%; margin-bottom:0px;">
-                     <asp:ListItem>Onbelangrijk</asp:ListItem>
-                     <asp:ListItem>Minder belangrijk</asp:ListItem>
-                     <asp:ListItem>Neutraal</asp:ListItem>
-                     <asp:ListItem>Belangrijk</asp:ListItem>
-                     <asp:ListItem>Zeer belangrijk</asp:ListItem>
+                     <asp:ListItem>Not important</asp:ListItem>
+                     <asp:ListItem>Less important</asp:ListItem>
+                     <asp:ListItem>Neutral</asp:ListItem>
+                     <asp:ListItem>Important</asp:ListItem>
+                     <asp:ListItem>Very important</asp:ListItem>
                   </asp:RadioButtonList>
        
                   <table class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:20%;">
@@ -1088,15 +1088,15 @@
                       </tr>
                   </table>
                   <asp:RadioButtonList id=Security runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:80%;">
-                     <asp:ListItem>Onbelangrijk</asp:ListItem>
-                     <asp:ListItem>Minder belangrijk</asp:ListItem>
-                     <asp:ListItem>Neutraal</asp:ListItem>
-                     <asp:ListItem>Belangrijk</asp:ListItem>
-                     <asp:ListItem>Zeer belangrijk</asp:ListItem>
+                     <asp:ListItem>Not important</asp:ListItem>
+                     <asp:ListItem>Less important</asp:ListItem>
+                     <asp:ListItem>Neutral</asp:ListItem>
+                     <asp:ListItem>Important</asp:ListItem>
+                     <asp:ListItem>Very important</asp:ListItem>
                   </asp:RadioButtonList></div>
 
     <div style="text-align:center; margin-top:25px;">
-      <asp:Button class="btn btn-default" id="Submit" Text="Voer uit" OnClick="Submit_Click" runat="server" style="font-size:19px;"/>
+      <asp:Button class="btn btn-default" id="Submit" Text="Submit" OnClick="Submit_Click" runat="server" style="font-size:19px;"/>
     </div><p>
 
 
@@ -1105,7 +1105,7 @@
     <asp:Panel id="Resultaat" runat="server" visible="false">
 
     <div style="text-align:center; margin-top:25px; margin-left:-60px;">
-        <h3 style="margin-left:60px;">Radar chart van bovenstaande input</h3>
+        <h3 style="margin-left:60px;">Radar chart about the input</h3>
         <chart:WebChartViewer id="WebChartViewer1" runat="server"/>
     </div>
     <div style="text-align:center; margin-left:-60px;">
@@ -1175,7 +1175,7 @@
         <thead>
             <th style="text-align: center; border-color:lightgray; font-size:19px;">Top 3</th>
             <th style="text-align: center;border-color:lightgray; font-size:19px;">Tool</th>
-            <th style="text-align: center;border-color:lightgray; font-size:19px;">Resultaat</th>
+            <th style="text-align: center;border-color:lightgray; font-size:19px;">Result</th>
             <th style="text-align: center;border-color:lightgray; font-size:19px;">Radar charts</th>
         </thead>
         <tr>
@@ -1199,12 +1199,12 @@
     </table>
 
     <div style="margin-top: 50px; text-align:center;">
-    <h4>We hebben het belang dat u aan ieder criteria hecht gecombineerd met de scores van iedere tool. </br>Op basis hiervan blijkt de meest geschikte tool <asp:HyperLink Text="Result" Id="ResultLink" Runat="Server" target="_blank" /> te zijn. Klik op de link voor meer informatie.</h4>
+    <h4>We have combined the intrest u attach to each criteria with the scores of each tool. </br>Based on that, the most suitable tool is <asp:HyperLink Text="Result" Id="ResultLink" Runat="Server" target="_blank" />. Click on the link for more information.</h4>
     </div>
 </asp:Panel>
 
     <asp:Panel id="Invullen" runat="server" visible="false">
-        <h4 style="color:red; margin-top:25px;">Gelieve eerst alle keuzes aan te duiden.</h4>
+        <h4 style="color:red; margin-top:25px;">Please, indicate all options first.</h4>
         </asp:Panel>
 
 </asp:Content>

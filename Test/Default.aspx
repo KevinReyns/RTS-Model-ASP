@@ -4,18 +4,20 @@
 
     <div class="jumbotron">
         <h1 style="font-size:60px;">No fool with the right reporting tool!</h1>
-        <p class="lead">Een objectieve aanpak tot het bekomen van de meest geschikte rapporteringsoplossing voor uw business.
-        <p><a href="./Model" class="btn btn-primary btn-lg">Probeer het nu zelf uit &raquo;</a></p>
+        <p class="lead">An objective approach to obtain the most suitable reporting solution for your business.
+
+        </p>
+        <p><a href="./Model" class="btn btn-primary btn-lg">Try it yourself &raquo;</a></p>
     </div>
 
     <div class="row">
         <div class="col-md-6">
-            <h2>Waarom een rapporteringstool?</h2>
+            <h2>Why use a reporting tool?</h2>
             <p>
-                In een tijd met steeds meer en meer data, waarbij het moeilijk wordt om de informatie
-                uit die data duidelijk over te brengen, wordt deze boodschap verduidelijkt door middel
-                van visuele voorstellingen. Om ervoor te zorgen dat deze data <em>storytelling</em> op een efficiënte manier gebeurt,
-                hebben organisaties nood aan een geschikte rapporteringstool.
+                In a time with ever increasing data, where it is difficult to clearly transfer information from that data, 
+                this information will be illustrated through visual representations. 
+                In order to ensure that this storytelling happens in an efficient way, 
+                organizations need to have a suitable reporting tool.
             </p>
                 <blockquote>
                   <p>Visualizations act as a campfire around which we gather to tell stories.</p>
@@ -23,18 +25,18 @@
                 </blockquote>
         </div>
         <div class="col-md-6">
-            <h2>Een richtlijn in het landschap van...</h2>
+            <h2>A guideline to support...</h2>
             <p>
-                Ondernemingen hebben het echter moeilijk om een geschikte rapporteringsoplossing te
-                kiezen die nauw aansluit bij hun <em>business</em> behoeften. Er bestaan reeds verschillende
-                adviesbureaus die <em>tools</em> scoren en positioneren in de markt. Deze rapporten 
-                bevatten echter enorm veel informatie waardoor het vaak moeilijk is om een eenduidig beeld te scheppen. 
-                Verder zijn deze rapporten vaak ook in hun algemeenheid opgesteld waardoor ondernemingen zelf de <em>tools</em>
-                moeten gaan zoeken die passen bij hun organisatie.</p>
+                Companies have, however, difficulties to choose an appropriate reporting solution that matches their business needs. 
+                There are already several consultancies scoring tools and positioning them in the market. 
+                However, these reports contain a lot of information which causes difficulties to establish a clear picture. 
+                Furthermore, these reports are often written in their generality, 
+                which causes businesses to have to look for the suitable tool that fits their organization themselves.
+            </p>
             <p>
-                Het <em>Reporting Tool Selection</em> model probeert het ideale huwelijk
-                te voorzien tussen de <em>business</em> behoeften van een organisatie en de objectieve scores
-                van de tools, dit op basis van een aantal voorgedefinieerde criteria.
+                The Reporting Tool Selection model attempts to provide the ideal marriage 
+                between the business needs of an organization and the objective scores of tools, 
+                based on a number of predefined criteria.
             </p>
         </div>
     </div>

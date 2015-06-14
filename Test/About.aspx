@@ -1,27 +1,31 @@
-﻿<%@ Page Title="Over ons" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="Test.About" %>
+﻿<%@ Page Title="About Us" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="Test.About" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %></h2>
     <h3>Project</h3>
-    <p>
-        Als laatstejaarsstudenten in de richting Informatiemanagement en Systemen, afstudeerrichting business intelligence, stonden we voor de opdracht om een eindwerk te realiseren. 
-        Dit eindwerk moet aantonen dat we de diverse aspecten van de opleiding verwerkt en geïntegreerd hebben, 
-        alsook dat we ze kunnen toepassen op een gesteld probleem dat gerelateerd is aan onze opleiding en ons afstudeertraject.
+    <p>As final year students in the bachelor degree programme IT Management & Systems, specialization business intelligence,
+        we were faced with the task of achieving a thesis. 
+        This thesis must demonstrate that we have used the various aspects of the program and have integrated them, 
+        and that we can apply them on a defined problem that is related to our education and our graduation program.
     </p>
     <p>
-        Dat er enorm veel data beschikbaar is, en er zeer veel <em>software vendors</em> producten aanbieden om deze data te pijnigen, staat buiten kijf. Er zijn zo veel <em>tools</em>, met allemaal eenzelfde doel, 
-        die onderling veel gelijkenissen hebben, maar iedere <em>tool</em> toch ook zijn eigen unieke kenmerken. Iedere <em>software vendor</em> zal immers vertellen dat zijn oplossing de beste is en de meeste voordelen biedt. 
-        De vraag luidt echter hoe er nu een geschikte oplossing gekozen kan worden, die voldoet een de verwachtingen van de <em>business</em>.
+        That there is an enormous amount of data available, 
+        and a lot of software vendors offer products to torment this data is indisputable. 
+        There are so many tools, all with the same goal, who may have many similarities, 
+        but all have their own unique characteristics. 
+        Every software vendor will tell you that their solution is the best and offers the most advantages. 
+        But the question is, how can you choose a suitable solution that meets the expectations of the business.    
     </p>
     <p>
-        Wij hebben dan ook besloten om een model te maken, dat een ideaal huwelijk probeert te voorzien tussen de <em>business</em> behoeften van een organisatie en de objectieve scores van de <em>tools</em>,
-        dit op basis van een aantal vooraf gedefinieerde criteria.
+        We have therefore decided to create a model,
+        that seeks to provide a perfect marriage between the business needs of an organization and the objective scores of tools, 
+        based on a number of predefined criteria.
     </p>
 
 <!-- Button trigger modal -->
     <div style="text-align:center; display:none;">
 <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" >
-  Toon eindwerk
+  Show thesis
 </button>
         </div>
 
@@ -48,15 +52,15 @@
         <div class="col-md-6" style="text-align:center">
             <img class="img-circle img-responsive"  src="Images/Kevin.jpg" style="display: block;margin-left: auto;margin-right: auto;"/>
             <h4>Kevin Reyns</h4>
-            <img src="Images/Mail.png" style="height:40px; width:35px;"/><a style="margin-left:10px;" href="mailto:kevin_reyns@hotmail.com">kevin_reyns@hotmail.com</a></br>
-            <img src="Images/LinkedIn.png" style="height:25px; width:25px;"/><a style="margin-left:10px; vertical-align:bottom;" href="https://be.linkedin.com/in/kevinreyns" target="_blank">Kevin Reyns</a></br>
+            <img src="Images/Mail.png" style="height:40px; width:35px;"/><a style="margin-left:10px;" href="mailto:kevin_reyns@hotmail.com">kevin_reyns@hotmail.com</a><br />
+            <img src="Images/LinkedIn.png" style="height:25px; width:25px;"/><a style="margin-left:10px; vertical-align:bottom;" href="https://be.linkedin.com/in/kevinreyns" target="_blank">Kevin Reyns</a><br />
             <img src="Images/Twitter.png" style="height:25px; width:25px; margin-top:10px;"/><a style="margin-left:10px; vertical-align:bottom;" href="https://twitter.com/ReynsKevin" target="_blank">@ReynsKevin</a>
         </div>
         <div class="col-md-6" style="text-align:center">
-            <img class="img-circle img-responsive" src="Images/Wouter.jpg" src="Images/Kevin.jpg" style="display: block;margin-left: auto;margin-right: auto;"/>
+            <img class="img-circle img-responsive" src="Images/Wouter.jpg" style="display: block;margin-left: auto;margin-right: auto;"/>
             <h4>Wouter Baeckelmans</h4>
-            <img src="Images/Mail.png" style="height:40px; width:35px;"/><a style="margin-left:10px;" href="mailto:wouter.baeckelmans@gmail.com">wouter.baeckelmans@gmail.com</a></br>
-            <img src="Images/LinkedIn.png" style="height:25px; width:25px;"/><a style="margin-left:10px; vertical-align:bottom;" href="https://be.linkedin.com/in/wouterbaeckelmans" target="_blank">Wouter Baeckelmans</a></br>
+            <img src="Images/Mail.png" style="height:40px; width:35px;"/><a style="margin-left:10px;" href="mailto:wouter.baeckelmans@gmail.com">wouter.baeckelmans@gmail.com</a><br />
+            <img src="Images/LinkedIn.png" style="height:25px; width:25px;"/><a style="margin-left:10px; vertical-align:bottom;" href="https://be.linkedin.com/in/wouterbaeckelmans" target="_blank">Wouter Baeckelmans</a><br />
             <img src="Images/Twitter.png" style="height:25px; width:25px; margin-top:10px;"/><a style="margin-left:10px; vertical-align:bottom;" href="https://twitter.com/Baeckelmans_W" target="_blank">@Baeckelmans_W</a>
         </div>
     </div>

@@ -100,7 +100,7 @@ namespace Test {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        ///protected global::System.Web.UI.WebControls.Panel Resultaat;
+        protected global::System.Web.UI.WebControls.Panel Resultaat;
         
         /// <summary>
         /// WebChartViewer1 control.
