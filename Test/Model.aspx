@@ -997,11 +997,11 @@
                       </tr>
                   </table>
                   <asp:RadioButtonList id=Data runat="server"  RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:80%; margin-bottom:0px;">
-                     <asp:ListItem>Not important</asp:ListItem>
-                     <asp:ListItem>Less important</asp:ListItem>
-                     <asp:ListItem>Neutral</asp:ListItem>
+                     <asp:ListItem>Not at all important</asp:ListItem>
+                     <asp:ListItem>Slightly important</asp:ListItem>
+                     <asp:ListItem>Moderately important</asp:ListItem>
                      <asp:ListItem>Important</asp:ListItem>
-                     <asp:ListItem>Very important</asp:ListItem>
+                     <asp:ListItem>Very Important</asp:ListItem>
                   </asp:RadioButtonList>
 
                   <table class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:20%; margin-bottom:0px;">
@@ -1010,11 +1010,11 @@
                       </tr>
                   </table>
                   <asp:RadioButtonList id=Visualisatie runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:80%; margin-bottom:0px;">
-                     <asp:ListItem>Not important</asp:ListItem>
-                     <asp:ListItem>Less important</asp:ListItem>
-                     <asp:ListItem>Neutral</asp:ListItem>
+                     <asp:ListItem>Not at all important</asp:ListItem>
+                     <asp:ListItem>Slightly important</asp:ListItem>
+                     <asp:ListItem>Moderately important</asp:ListItem>
                      <asp:ListItem>Important</asp:ListItem>
-                     <asp:ListItem>Very important</asp:ListItem>
+                     <asp:ListItem>Very Important</asp:ListItem>
                   </asp:RadioButtonList>
             
                   <table class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:20%; margin-bottom:0px;">
@@ -1023,11 +1023,11 @@
                       </tr>
                   </table>
                   <asp:RadioButtonList id=Prijs runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:80%; margin-bottom:0px;">
-                     <asp:ListItem>Not important</asp:ListItem>
-                     <asp:ListItem>Less important</asp:ListItem>
-                     <asp:ListItem>Neutral</asp:ListItem>
+                     <asp:ListItem>Not at all important</asp:ListItem>
+                     <asp:ListItem>Slightly important</asp:ListItem>
+                     <asp:ListItem>Moderately important</asp:ListItem>
                      <asp:ListItem>Important</asp:ListItem>
-                     <asp:ListItem>Very important</asp:ListItem>
+                     <asp:ListItem>Very Important</asp:ListItem>
                   </asp:RadioButtonList>
 
                   <table class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:20%; margin-bottom:0px;">
@@ -1036,11 +1036,11 @@
                       </tr>
                   </table>
                   <asp:RadioButtonList id=Selfservice runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:80%; margin-bottom:0px;">
-                     <asp:ListItem>Not important</asp:ListItem>
-                     <asp:ListItem>Less important</asp:ListItem>
-                     <asp:ListItem>Neutral</asp:ListItem>
+                     <asp:ListItem>Not at all important</asp:ListItem>
+                     <asp:ListItem>Slightly important</asp:ListItem>
+                     <asp:ListItem>Moderately important</asp:ListItem>
                      <asp:ListItem>Important</asp:ListItem>
-                     <asp:ListItem>Very important</asp:ListItem>
+                     <asp:ListItem>Very Important</asp:ListItem>
                   </asp:RadioButtonList>
 
                   <table class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:20%; margin-bottom:0px;">
@@ -1049,11 +1049,11 @@
                       </tr>
                   </table>
                   <asp:RadioButtonList id=Predictive runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:80%; margin-bottom:0px;">
-                     <asp:ListItem>Not important</asp:ListItem>
-                     <asp:ListItem>Less important</asp:ListItem>
-                     <asp:ListItem>Neutral</asp:ListItem>
+                     <asp:ListItem>Not at all important</asp:ListItem>
+                     <asp:ListItem>Slightly important</asp:ListItem>
+                     <asp:ListItem>Moderately important</asp:ListItem>
                      <asp:ListItem>Important</asp:ListItem>
-                     <asp:ListItem>Very important</asp:ListItem>
+                     <asp:ListItem>Very Important</asp:ListItem>
                   </asp:RadioButtonList>
 
                   <table class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:20%; margin-bottom:0px;">
@@ -1062,11 +1062,11 @@
                       </tr>
                   </table>
                   <asp:RadioButtonList id=Mobiel runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:80%; margin-bottom:0px;">
-                     <asp:ListItem>Not important</asp:ListItem>
-                     <asp:ListItem>Less important</asp:ListItem>
-                     <asp:ListItem>Neutral</asp:ListItem>
+                     <asp:ListItem>Not at all important</asp:ListItem>
+                     <asp:ListItem>Slightly important</asp:ListItem>
+                     <asp:ListItem>Moderately important</asp:ListItem>
                      <asp:ListItem>Important</asp:ListItem>
-                     <asp:ListItem>Very important</asp:ListItem>
+                     <asp:ListItem>Very Important</asp:ListItem>
                   </asp:RadioButtonList>
 
                   <table class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:20%; margin-bottom:0px;">
@@ -1075,11 +1075,11 @@
                       </tr>
                   </table>
                   <asp:RadioButtonList id=Collaboration runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:80%; margin-bottom:0px;">
-                     <asp:ListItem>Not important</asp:ListItem>
-                     <asp:ListItem>Less important</asp:ListItem>
-                     <asp:ListItem>Neutral</asp:ListItem>
+                     <asp:ListItem>Not at all important</asp:ListItem>
+                     <asp:ListItem>Slightly important</asp:ListItem>
+                     <asp:ListItem>Moderately important</asp:ListItem>
                      <asp:ListItem>Important</asp:ListItem>
-                     <asp:ListItem>Very important</asp:ListItem>
+                     <asp:ListItem>Very Important</asp:ListItem>
                   </asp:RadioButtonList>
        
                   <table class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:20%;">
@@ -1088,11 +1088,11 @@
                       </tr>
                   </table>
                   <asp:RadioButtonList id=Security runat="server" RepeatDirection="Horizontal" RepeatLayout="Table" class="table table-bordered table-hover table-responsive" style="text-align:left; float:left; width:80%;">
-                     <asp:ListItem>Not important</asp:ListItem>
-                     <asp:ListItem>Less important</asp:ListItem>
-                     <asp:ListItem>Neutral</asp:ListItem>
+                     <asp:ListItem>Not at all important</asp:ListItem>
+                     <asp:ListItem>Slightly important</asp:ListItem>
+                     <asp:ListItem>Moderately important</asp:ListItem>
                      <asp:ListItem>Important</asp:ListItem>
-                     <asp:ListItem>Very important</asp:ListItem>
+                     <asp:ListItem>Very Important</asp:ListItem>
                   </asp:RadioButtonList></div>
 
     <div style="text-align:center; margin-top:25px;">
@@ -1105,7 +1105,7 @@
     <asp:Panel id="Resultaat" runat="server" visible="false">
 
     <div style="text-align:center; margin-top:25px; margin-left:-60px;">
-        <h3 style="margin-left:60px;">Radar chart about the input</h3>
+        <h3 style="margin-left:60px;">Radar chart based on the above input</h3>
         <chart:WebChartViewer id="WebChartViewer1" runat="server"/>
     </div>
     <div style="text-align:center; margin-left:-60px;">
@@ -1199,7 +1199,7 @@
     </table>
 
     <div style="margin-top: 50px; text-align:center;">
-    <h4>We have combined the intrest u attach to each criteria with the scores of each tool. </br>Based on that, the most suitable tool is <asp:HyperLink Text="Result" Id="ResultLink" Runat="Server" target="_blank" />. Click on the link for more information.</h4>
+    <h4>By combining the importance your organisation adheres to each criteria with the scores of each tool on these criteria, </br>the most suitable tool for your organisation is <asp:HyperLink Text="Result" Id="ResultLink" Runat="Server" target="_blank" />. Click on the link for more information.</h4>
     </div>
 </asp:Panel>
 

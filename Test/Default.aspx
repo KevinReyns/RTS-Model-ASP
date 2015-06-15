@@ -7,35 +7,33 @@
         <p class="lead">An objective approach to obtain the most suitable reporting solution for your business.
 
         </p>
-        <p><a href="./Model" class="btn btn-primary btn-lg">Try it yourself &raquo;</a></p>
+        <p><a href="./Model" class="btn btn-primary btn-lg">Try it out right now &raquo;</a></p>
     </div>
 
     <div class="row">
         <div class="col-md-6">
             <h2>Why use a reporting tool?</h2>
             <p>
-                In a time with ever increasing data, where it is difficult to clearly transfer information from that data, 
-                this information will be illustrated through visual representations. 
-                In order to ensure that this storytelling happens in an efficient way, 
-                organizations need to have a suitable reporting tool.
+                In a time with ever increasing data, where it is difficult to clearly transform this data into meaningful information, 
+                companies rely on visual representations in order to clarify the message they want to tell.
+                In order to ensure that this data storytelling happens in an efficient way, 
+                organizations are in need of a suitable reporting tool.
             </p>
                 <blockquote>
                   <p>Visualizations act as a campfire around which we gather to tell stories.</p>
-                  <footer><cite title="Source Title">Al Shalloway</cite></footer>
+                  <footer><cite title="Source Title">Al Shalloway - CEO & founder of Net Objectives</cite></footer>
                 </blockquote>
         </div>
         <div class="col-md-6">
-            <h2>A guideline to support...</h2>
+            <h2>The need for a supporting guideline... </h2>
             <p>
-                Companies have, however, difficulties to choose an appropriate reporting solution that matches their business needs. 
-                There are already several consultancies scoring tools and positioning them in the market. 
-                However, these reports contain a lot of information which causes difficulties to establish a clear picture. 
-                Furthermore, these reports are often written in their generality, 
-                which causes businesses to have to look for the suitable tool that fits their organization themselves.
+                Companies have, however, difficulties to choose an appropriate reporting solution that suits their business requirements. 
+                There already exist several independent information technology research and advisory firms, whose main goal is to score products and position them in the market. 
+                These reports, however, contain a lot of information which causes difficulties in establishing a clear picture. 
             </p>
             <p>
                 The Reporting Tool Selection model attempts to provide the ideal marriage 
-                between the business needs of an organization and the objective scores of tools, 
+                between the business needs of an organization and the objective scores of the tools, 
                 based on a number of predefined criteria.
             </p>
         </div>

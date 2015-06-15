@@ -3,22 +3,22 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %></h2>
     <h3>Project</h3>
-    <p>As final year students in the bachelor degree programme IT Management & Systems, specialization business intelligence,
-        we were faced with the task of achieving a thesis. 
-        This thesis must demonstrate that we have used the various aspects of the program and have integrated them, 
+    <p>As graduating students in the bachelor degree programme IT Management and Systems, specialization business intelligence,
+        we were faced with the task of realising a bachelor's thesis. 
+        This thesis must demonstrate that we have acquired and integrated the various aspects of the program 
         and that we can apply them on a defined problem that is related to our education and our graduation program.
     </p>
     <p>
-        That there is an enormous amount of data available, 
-        and a lot of software vendors offer products to torment this data is indisputable. 
+        Nowadays there is an enormous amount of data available, 
+        and the fact that a lot of software vendors offer products to torment this data, is indisputable. <br /> 
         There are so many tools, all with the same goal, who may have many similarities, 
         but all have their own unique characteristics. 
         Every software vendor will tell you that their solution is the best and offers the most advantages. 
-        But the question is, how can you choose a suitable solution that meets the expectations of the business.    
+        But the question is, how can you choose a suitable solution that meets the expectations of your business requirements?  
     </p>
     <p>
         We have therefore decided to create a model,
-        that seeks to provide a perfect marriage between the business needs of an organization and the objective scores of tools, 
+        that seeks to provide a perfect marriage between the business needs of an organization and the objective scores of the tools, 
         based on a number of predefined criteria.
     </p>
 
