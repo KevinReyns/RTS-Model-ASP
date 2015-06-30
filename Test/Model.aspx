@@ -836,13 +836,13 @@
 
 
        if(TotaalS > TotaalT && TotaalS > TotaalP && TotaalP > TotaalT){
-       ResToolLink1.Text = "SAS Visual Analytics";
+       ResToolLink1.Text = "Tool 2";
        ResPercLabel1.Text = String.Format("{0:P2}",TotaalS);
        ResToolLink1.NavigateUrl = "http://www.sas.com/en_be/software/business-intelligence/visual-analytics.html";
-       ResToolLink2.Text = "Pentaho Business Analytics";
+       ResToolLink2.Text = "Tool 3";
        ResPercLabel2.Text = String.Format("{0:P2}",TotaalP);
        ResToolLink2.NavigateUrl = "http://www.pentaho.com/product/business-visualization-analytics";
-       ResToolLink3.Text = "Tableau";
+       ResToolLink3.Text = "Tool 1";
        ResPercLabel3.Text = String.Format("{0:P2}",TotaalT);
        ResToolLink3.NavigateUrl = "http://www.tableau.com/";
 
@@ -858,13 +858,13 @@
 
        }
        else if(TotaalS > TotaalT && TotaalS > TotaalP && TotaalT > TotaalP){
-       ResToolLink1.Text = "SAS Visual Analytics";
+       ResToolLink1.Text = "Tool 2";
        ResPercLabel1.Text = String.Format("{0:P2}",TotaalS);
        ResToolLink1.NavigateUrl = "http://www.sas.com/en_be/software/business-intelligence/visual-analytics.html";
-       ResToolLink2.Text = "Tableau";
+       ResToolLink2.Text = "Tool 1";
        ResPercLabel2.Text = String.Format("{0:P2}",TotaalT);
        ResToolLink2.NavigateUrl = "http://www.tableau.com/";
-       ResToolLink3.Text = "Pentaho Business Analytics";
+       ResToolLink3.Text = "Tool 3";
        ResPercLabel3.Text = String.Format("{0:P2}",TotaalP);
        ResToolLink3.NavigateUrl = "http://www.pentaho.com/product/business-visualization-analytics";
 
@@ -880,13 +880,13 @@
 
        }
        else if(TotaalP > TotaalT && TotaalP > TotaalS && TotaalT > TotaalS){
-       ResToolLink1.Text = "Pentaho Business Analytics";
+       ResToolLink1.Text = "Tool 3";
        ResPercLabel1.Text = String.Format("{0:P2}",TotaalP);
        ResToolLink1.NavigateUrl = "http://www.pentaho.com/product/business-visualization-analytics";
-       ResToolLink2.Text = "Tableau";
+       ResToolLink2.Text = "Tool 1";
        ResPercLabel2.Text = String.Format("{0:P2}",TotaalT);
        ResToolLink2.NavigateUrl = "http://www.tableau.com/";
-       ResToolLink3.Text = "SAS Visual Analytics";
+       ResToolLink3.Text = "Tool 2";
        ResPercLabel3.Text = String.Format("{0:P2}",TotaalS);
        ResToolLink3.NavigateUrl = "http://www.sas.com/en_be/software/business-intelligence/visual-analytics.html";
 
@@ -902,13 +902,13 @@
 
        }
        else if(TotaalP > TotaalT && TotaalP > TotaalS && TotaalS > TotaalT){
-       ResToolLink1.Text = "Pentaho Business Analytics";
+       ResToolLink1.Text = "Tool 3";
        ResPercLabel1.Text = String.Format("{0:P2}",TotaalP);
        ResToolLink1.NavigateUrl = "http://www.pentaho.com/product/business-visualization-analytics";
-       ResToolLink2.Text = "SAS Visual Analytics";
+       ResToolLink2.Text = "Tool 2";
        ResPercLabel2.Text = String.Format("{0:P2}",TotaalS);
        ResToolLink2.NavigateUrl = "http://www.sas.com/en_be/software/business-intelligence/visual-analytics.html";
-       ResToolLink3.Text = "Tableau";
+       ResToolLink3.Text = "Tool 1";
        ResPercLabel3.Text = String.Format("{0:P2}",TotaalT);
        ResToolLink3.NavigateUrl = "http://www.tableau.com/";
 
@@ -924,13 +924,13 @@
 
        }
        else if(TotaalT > TotaalP && TotaalT > TotaalS && TotaalS > TotaalP){
-       ResToolLink1.Text = "Tableau";
+       ResToolLink1.Text = "Tool 1";
        ResPercLabel1.Text = String.Format("{0:P2}",TotaalT);
        ResToolLink1.NavigateUrl = "http://www.tableau.com/";
-       ResToolLink2.Text = "SAS Visual Analytics";
+       ResToolLink2.Text = "Tool 2";
        ResPercLabel2.Text = String.Format("{0:P2}",TotaalS);
        ResToolLink2.NavigateUrl = "http://www.sas.com/en_be/software/business-intelligence/visual-analytics.html";
-       ResToolLink3.Text = "Pentaho Business Analytics";
+       ResToolLink3.Text = "Tool 3";
        ResPercLabel3.Text = String.Format("{0:P2}",TotaalP);
        ResToolLink3.NavigateUrl = "http://www.pentaho.com/product/business-visualization-analytics";
 
@@ -946,13 +946,13 @@
 
        }
        else if(TotaalT > TotaalP && TotaalT > TotaalS && TotaalP > TotaalS){
-       ResToolLink1.Text = "Tableau";
+       ResToolLink1.Text = "Tool";
        ResPercLabel1.Text = String.Format("{0:P2}",TotaalT);
-       ResToolLink1.NavigateUrl = "http://www.tableau.com/";
-       ResToolLink2.Text = "Pentaho Business Analytics";
+       ResToolLink1.NavigateUrl = "http://www.1.com/";
+       ResToolLink2.Text = "Tool 3";
        ResPercLabel2.Text = String.Format("{0:P2}",TotaalP);
        ResToolLink2.NavigateUrl = "http://www.pentaho.com/product/business-visualization-analytics";
-       ResToolLink3.Text = "SAS Visual Analytics";
+       ResToolLink3.Text = "Tool 2";
        ResPercLabel3.Text = String.Format("{0:P2}",TotaalS);
        ResToolLink3.NavigateUrl = "http://www.sas.com/en_be/software/business-intelligence/visual-analytics.html";
 
@@ -971,15 +971,15 @@
 
 
        if(TotaalS > TotaalT && TotaalS > TotaalP){
-       ResultLink.Text = "SAS Visual Analytics";
+       ResultLink.Text = "Tool 2";
        ResultLink.NavigateUrl = "http://www.sas.com/en_be/software/business-intelligence/visual-analytics.html";
        }
        else if(TotaalT > TotaalS && TotaalT > TotaalP){
-       ResultLink.Text = "Tableau";
+       ResultLink.Text = "Tool 1";
        ResultLink.NavigateUrl = "http://www.tableau.com/";
        }
        else if(TotaalP > TotaalS && TotaalP > TotaalT){
-       ResultLink.Text = "Pentaho Business Analytics";
+       ResultLink.Text = "Tool 3";
        ResultLink.NavigateUrl = "http://www.pentaho.com/product/business-visualization-analytics";
        }
        
@@ -1119,7 +1119,7 @@
     <div class="modal-content" style="height:410px;">
       <div class="modal-header" style="background-color:white;">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Radar chart SAS Visual Analytics</h4>
+        <h4 class="modal-title" id="myModalLabel">Radar chart Tool 2</h4>
       </div>
       <div class="modal-body" style="padding:10px 25px; height:410px; background-color:white;">
           <chart:WebChartViewer id="WebChartViewer2" runat="server"/>
@@ -1138,7 +1138,7 @@
     <div class="modal-content" style="height:410px;">
       <div class="modal-header" style="background-color:white;">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Radar chart Tableau</h4>
+        <h4 class="modal-title" id="myModalLabel">Radar chart Tool 1</h4>
       </div>
       <div class="modal-body" style="padding:10px 25px; height:410px; background-color:white;">
           <chart:WebChartViewer id="WebChartViewer3" runat="server"/>
@@ -1157,7 +1157,7 @@
     <div class="modal-content" style="height:410px;">
       <div class="modal-header" style="background-color:white;">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Radar chart Pentaho Business Analytics</h4>
+        <h4 class="modal-title" id="myModalLabel">Radar chart Tool 3</h4>
       </div>
       <div class="modal-body" style="padding:10px 25px; height:410px; background-color:white;">
           <chart:WebChartViewer id="WebChartViewer4" runat="server"/>
@@ -1182,19 +1182,19 @@
             <th style="text-align: center;border-color:lightgray; font-size:19px;">1</th>
             <td style="border-color:lightgray; font-size:19px;"><asp:HyperLink Text="Tool" Id="ResToolLink1" Runat="Server" target="_blank" style="text-decoration:none;"/></td>
             <td style="border-color:lightgray; font-size:19px;"><asp:Label id="ResPercLabel1"  runat="server"/></td>
-            <td style="border-color:lightgray; font-size:19px;"><asp:HyperLink Text="Pentaho BA Radar" id="PH1" Runat="Server" data-toggle="modal" data-target="#pentModal" style="cursor:pointer; text-decoration:none;" visible="false"/><asp:HyperLink Text="Tableau Radar" id="TH1" Runat="Server" data-toggle="modal" data-target="#tabModal" style="cursor:pointer; text-decoration:none;" visible="false"/><asp:HyperLink Text="SAS VA Radar" id="SH1" Runat="Server" data-toggle="modal" data-target="#sasModal" style="cursor:pointer; text-decoration:none;" visible="false"/></td>
+            <td style="border-color:lightgray; font-size:19px;"><asp:HyperLink Text="Tool 3 Radar" id="PH1" Runat="Server" data-toggle="modal" data-target="#pentModal" style="cursor:pointer; text-decoration:none;" visible="false"/><asp:HyperLink Text="Tool 1 Radar" id="TH1" Runat="Server" data-toggle="modal" data-target="#tabModal" style="cursor:pointer; text-decoration:none;" visible="false"/><asp:HyperLink Text="Tool 2 Radar" id="SH1" Runat="Server" data-toggle="modal" data-target="#sasModal" style="cursor:pointer; text-decoration:none;" visible="false"/></td>
         </tr>
         <tr>
             <th style="text-align: center;border-color:lightgray; font-size:19px;">2</th>
             <td style="border-color:lightgray; font-size:19px;"><asp:HyperLink Text="Tool" Id="ResToolLink2" Runat="Server" target="_blank" style="text-decoration:none;"/></td>
             <td style="border-color:lightgray; font-size:19px;"><asp:Label id="ResPercLabel2"  runat="server"/></td>
-            <td style="border-color:lightgray; font-size:19px;"><asp:HyperLink Text="Pentaho BA Radar" id="PH2" Runat="Server" data-toggle="modal" data-target="#pentModal" style="cursor:pointer; text-decoration:none;" visible="false"/><asp:HyperLink Text="Tableau Radar" id="TH2" Runat="Server" data-toggle="modal" data-target="#tabModal" style="cursor:pointer; text-decoration:none;" visible="false"/><asp:HyperLink Text="SAS VA Radar" id="SH2" Runat="Server" data-toggle="modal" data-target="#sasModal" style="cursor:pointer; text-decoration:none;" visible="false"/></td>
+            <td style="border-color:lightgray; font-size:19px;"><asp:HyperLink Text="Tool 3 Radar" id="PH2" Runat="Server" data-toggle="modal" data-target="#pentModal" style="cursor:pointer; text-decoration:none;" visible="false"/><asp:HyperLink Text="Tool 1 Radar" id="TH2" Runat="Server" data-toggle="modal" data-target="#tabModal" style="cursor:pointer; text-decoration:none;" visible="false"/><asp:HyperLink Text="Tool 2 Radar" id="SH2" Runat="Server" data-toggle="modal" data-target="#sasModal" style="cursor:pointer; text-decoration:none;" visible="false"/></td>
         </tr>
         <tr>
             <th style="text-align: center;border-color:lightgray; font-size:19px;">3</th>
             <td style="border-color:lightgray; font-size:19px;"><asp:HyperLink Text="Tool" Id="ResToolLink3" Runat="Server" target="_blank" style="text-decoration:none;"/></td>
             <td style="border-color:lightgray; font-size:19px;"><asp:Label id="ResPercLabel3"  runat="server"/></td>
-            <td style="border-color:lightgray; font-size:19px;"><asp:HyperLink Text="Pentaho BA Radar" id="PH3" Runat="Server" data-toggle="modal" data-target="#pentModal" style="cursor:pointer; text-decoration:none;" visible="false"/><asp:HyperLink Text="Tableau Radar" id="TH3" Runat="Server" data-toggle="modal" data-target="#tabModal" style="cursor:pointer; text-decoration:none;" visible="false"/><asp:HyperLink Text="SAS VA Radar" id="SH3" Runat="Server" data-toggle="modal" data-target="#sasModal" style="cursor:pointer; text-decoration:none;" visible="false"/></td>
+            <td style="border-color:lightgray; font-size:19px;"><asp:HyperLink Text="Tool 3 Radar" id="PH3" Runat="Server" data-toggle="modal" data-target="#pentModal" style="cursor:pointer; text-decoration:none;" visible="false"/><asp:HyperLink Text="Tool 1 Radar" id="TH3" Runat="Server" data-toggle="modal" data-target="#tabModal" style="cursor:pointer; text-decoration:none;" visible="false"/><asp:HyperLink Text="Tool 2 Radar" id="SH3" Runat="Server" data-toggle="modal" data-target="#sasModal" style="cursor:pointer; text-decoration:none;" visible="false"/></td>
         </tr>
     </table>
 

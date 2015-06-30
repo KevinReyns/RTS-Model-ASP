@@ -23,7 +23,7 @@
     </p>
 
 <!-- Button trigger modal -->
-    <div style="text-align:center; display:none;">
+    <div style="text-align:center;">
 <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" >
   Show thesis
 </button>
