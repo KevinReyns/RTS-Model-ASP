@@ -35,7 +35,7 @@
     <div class="modal-content" >
       <div class="modal-header" style="background-color:white;">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Eindwerk</h4>
+        <h4 class="modal-title" id="myModalLabel">Thesis</h4>
       </div>
       <div class="modal-body" style="padding:10px 25px;  background-color:white;">
           <object type="application/pdf" data="Eindwerk.pdf" width="650" style="height:675px; max-height: 100%;">this is not working as expected</object>

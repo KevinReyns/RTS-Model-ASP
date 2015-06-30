@@ -1199,7 +1199,7 @@
     </table>
 
     <div style="margin-top: 50px; text-align:center;">
-    <h4>By combining the importance your organisation adheres to each criteria with the scores of each tool on these criteria, </br>the most suitable tool for your organisation is <asp:HyperLink Text="Result" Id="ResultLink" Runat="Server" target="_blank" />.</h4>
+    <h4>By combining the importance your organisation adheres to each criteria with the scores of each tool on these criteria, </br>the most suitable tool for your organisation is <asp:HyperLink Text="Result" Id="ResultLink" Runat="Server" target="_blank" style="text-decoration:none;"/>.</h4>
     </div>
 </asp:Panel>
 
