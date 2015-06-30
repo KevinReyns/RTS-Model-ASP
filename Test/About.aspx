@@ -6,7 +6,7 @@
     <p>As graduating students in the bachelor degree programme IT Management and Systems, specialization business intelligence,
         we were faced with the task of realising a bachelor's thesis. 
         This thesis must demonstrate that we have acquired and integrated the various aspects of the program 
-        and that we can apply them on a defined problem that is related to our education and our graduation program.
+        and that we can apply them on a defined problem that is related to our education program.
     </p>
     <p>
         Nowadays there is an enormous amount of data available, 
@@ -18,14 +18,14 @@
     </p>
     <p>
         We have therefore decided to create a model,
-        that seeks to provide a perfect marriage between the business needs of an organization and the objective scores of the tools, 
+        that seeks to provide a perfect marriage between the business requirements of an organization and the objective scores of the tools, 
         based on a number of predefined criteria.
     </p>
 
 <!-- Button trigger modal -->
     <div style="text-align:center;">
 <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" >
-  Show thesis
+  Show thesis (dutch)
 </button>
         </div>
 
@@ -54,14 +54,12 @@
             <h4>Kevin Reyns</h4>
             <img src="Images/Mail.png" style="height:40px; width:35px;"/><a style="margin-left:10px;" href="mailto:kevin_reyns@hotmail.com">kevin_reyns@hotmail.com</a><br />
             <img src="Images/LinkedIn.png" style="height:25px; width:25px;"/><a style="margin-left:10px; vertical-align:bottom;" href="https://be.linkedin.com/in/kevinreyns" target="_blank">Kevin Reyns</a><br />
-            <img src="Images/Twitter.png" style="height:25px; width:25px; margin-top:10px;"/><a style="margin-left:10px; vertical-align:bottom;" href="https://twitter.com/ReynsKevin" target="_blank">@ReynsKevin</a>
         </div>
         <div class="col-md-6" style="text-align:center">
             <img class="img-circle img-responsive" src="Images/Wouter.jpg" style="display: block;margin-left: auto;margin-right: auto;"/>
             <h4>Wouter Baeckelmans</h4>
             <img src="Images/Mail.png" style="height:40px; width:35px;"/><a style="margin-left:10px;" href="mailto:wouter.baeckelmans@gmail.com">wouter.baeckelmans@gmail.com</a><br />
             <img src="Images/LinkedIn.png" style="height:25px; width:25px;"/><a style="margin-left:10px; vertical-align:bottom;" href="https://be.linkedin.com/in/wouterbaeckelmans" target="_blank">Wouter Baeckelmans</a><br />
-            <img src="Images/Twitter.png" style="height:25px; width:25px; margin-top:10px;"/><a style="margin-left:10px; vertical-align:bottom;" href="https://twitter.com/Baeckelmans_W" target="_blank">@Baeckelmans_W</a>
         </div>
     </div>
 </asp:Content>

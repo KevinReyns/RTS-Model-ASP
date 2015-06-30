@@ -109,7 +109,7 @@ namespace Test {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        ///protected global::ChartDirector.WebChartViewer WebChartViewer1;
+        protected global::ChartDirector.WebChartViewer WebChartViewer1;
         
         /// <summary>
         /// WebChartViewer2 control.
@@ -118,7 +118,7 @@ namespace Test {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        ///protected global::ChartDirector.WebChartViewer WebChartViewer2;
+        protected global::ChartDirector.WebChartViewer WebChartViewer2;
         
         /// <summary>
         /// WebChartViewer3 control.
@@ -127,7 +127,7 @@ namespace Test {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        ///protected global::ChartDirector.WebChartViewer WebChartViewer3;
+        protected global::ChartDirector.WebChartViewer WebChartViewer3;
         
         /// <summary>
         /// WebChartViewer4 control.
@@ -136,7 +136,7 @@ namespace Test {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-       /// protected global::ChartDirector.WebChartViewer WebChartViewer4;
+        protected global::ChartDirector.WebChartViewer WebChartViewer4;
         
         /// <summary>
         /// ResToolLink1 control.

@@ -838,13 +838,13 @@
        if(TotaalS > TotaalT && TotaalS > TotaalP && TotaalP > TotaalT){
        ResToolLink1.Text = "Tool 2";
        ResPercLabel1.Text = String.Format("{0:P2}",TotaalS);
-       ResToolLink1.NavigateUrl = "http://www.sas.com/en_be/software/business-intelligence/visual-analytics.html";
+       ResToolLink1.NavigateUrl = "";
        ResToolLink2.Text = "Tool 3";
        ResPercLabel2.Text = String.Format("{0:P2}",TotaalP);
-       ResToolLink2.NavigateUrl = "http://www.pentaho.com/product/business-visualization-analytics";
+       ResToolLink2.NavigateUrl = "";
        ResToolLink3.Text = "Tool 1";
        ResPercLabel3.Text = String.Format("{0:P2}",TotaalT);
-       ResToolLink3.NavigateUrl = "http://www.tableau.com/";
+       ResToolLink3.NavigateUrl = "";
 
        SH1.Visible=true;
        SH2.Visible=false;
@@ -860,13 +860,13 @@
        else if(TotaalS > TotaalT && TotaalS > TotaalP && TotaalT > TotaalP){
        ResToolLink1.Text = "Tool 2";
        ResPercLabel1.Text = String.Format("{0:P2}",TotaalS);
-       ResToolLink1.NavigateUrl = "http://www.sas.com/en_be/software/business-intelligence/visual-analytics.html";
+       ResToolLink1.NavigateUrl = "";
        ResToolLink2.Text = "Tool 1";
        ResPercLabel2.Text = String.Format("{0:P2}",TotaalT);
-       ResToolLink2.NavigateUrl = "http://www.tableau.com/";
+       ResToolLink2.NavigateUrl = "";
        ResToolLink3.Text = "Tool 3";
        ResPercLabel3.Text = String.Format("{0:P2}",TotaalP);
-       ResToolLink3.NavigateUrl = "http://www.pentaho.com/product/business-visualization-analytics";
+       ResToolLink3.NavigateUrl = "";
 
        SH1.Visible=true;
        SH2.Visible=false;
@@ -882,13 +882,13 @@
        else if(TotaalP > TotaalT && TotaalP > TotaalS && TotaalT > TotaalS){
        ResToolLink1.Text = "Tool 3";
        ResPercLabel1.Text = String.Format("{0:P2}",TotaalP);
-       ResToolLink1.NavigateUrl = "http://www.pentaho.com/product/business-visualization-analytics";
+       ResToolLink1.NavigateUrl = "";
        ResToolLink2.Text = "Tool 1";
        ResPercLabel2.Text = String.Format("{0:P2}",TotaalT);
-       ResToolLink2.NavigateUrl = "http://www.tableau.com/";
+       ResToolLink2.NavigateUrl = "";
        ResToolLink3.Text = "Tool 2";
        ResPercLabel3.Text = String.Format("{0:P2}",TotaalS);
-       ResToolLink3.NavigateUrl = "http://www.sas.com/en_be/software/business-intelligence/visual-analytics.html";
+       ResToolLink3.NavigateUrl = "";
 
        SH1.Visible=false;
        SH2.Visible=false;
@@ -904,13 +904,13 @@
        else if(TotaalP > TotaalT && TotaalP > TotaalS && TotaalS > TotaalT){
        ResToolLink1.Text = "Tool 3";
        ResPercLabel1.Text = String.Format("{0:P2}",TotaalP);
-       ResToolLink1.NavigateUrl = "http://www.pentaho.com/product/business-visualization-analytics";
+       ResToolLink1.NavigateUrl = "";
        ResToolLink2.Text = "Tool 2";
        ResPercLabel2.Text = String.Format("{0:P2}",TotaalS);
-       ResToolLink2.NavigateUrl = "http://www.sas.com/en_be/software/business-intelligence/visual-analytics.html";
+       ResToolLink2.NavigateUrl = "";
        ResToolLink3.Text = "Tool 1";
        ResPercLabel3.Text = String.Format("{0:P2}",TotaalT);
-       ResToolLink3.NavigateUrl = "http://www.tableau.com/";
+       ResToolLink3.NavigateUrl = "";
 
        SH1.Visible=false;
        SH2.Visible=true;
@@ -926,13 +926,13 @@
        else if(TotaalT > TotaalP && TotaalT > TotaalS && TotaalS > TotaalP){
        ResToolLink1.Text = "Tool 1";
        ResPercLabel1.Text = String.Format("{0:P2}",TotaalT);
-       ResToolLink1.NavigateUrl = "http://www.tableau.com/";
+       ResToolLink1.NavigateUrl = "";
        ResToolLink2.Text = "Tool 2";
        ResPercLabel2.Text = String.Format("{0:P2}",TotaalS);
-       ResToolLink2.NavigateUrl = "http://www.sas.com/en_be/software/business-intelligence/visual-analytics.html";
+       ResToolLink2.NavigateUrl = "";
        ResToolLink3.Text = "Tool 3";
        ResPercLabel3.Text = String.Format("{0:P2}",TotaalP);
-       ResToolLink3.NavigateUrl = "http://www.pentaho.com/product/business-visualization-analytics";
+       ResToolLink3.NavigateUrl = "";
 
        SH1.Visible=false;
        SH2.Visible=true;
@@ -972,15 +972,15 @@
 
        if(TotaalS > TotaalT && TotaalS > TotaalP){
        ResultLink.Text = "Tool 2";
-       ResultLink.NavigateUrl = "http://www.sas.com/en_be/software/business-intelligence/visual-analytics.html";
+       ResultLink.NavigateUrl = "";
        }
        else if(TotaalT > TotaalS && TotaalT > TotaalP){
        ResultLink.Text = "Tool 1";
-       ResultLink.NavigateUrl = "http://www.tableau.com/";
+       ResultLink.NavigateUrl = "";
        }
        else if(TotaalP > TotaalS && TotaalP > TotaalT){
        ResultLink.Text = "Tool 3";
-       ResultLink.NavigateUrl = "http://www.pentaho.com/product/business-visualization-analytics";
+       ResultLink.NavigateUrl = "";
        }
        
       }
@@ -1199,7 +1199,7 @@
     </table>
 
     <div style="margin-top: 50px; text-align:center;">
-    <h4>By combining the importance your organisation adheres to each criteria with the scores of each tool on these criteria, </br>the most suitable tool for your organisation is <asp:HyperLink Text="Result" Id="ResultLink" Runat="Server" target="_blank" />. Click on the link for more information.</h4>
+    <h4>By combining the importance your organisation adheres to each criteria with the scores of each tool on these criteria, </br>the most suitable tool for your organisation is <asp:HyperLink Text="Result" Id="ResultLink" Runat="Server" target="_blank" />.</h4>
     </div>
 </asp:Panel>
 
